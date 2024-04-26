@@ -1,0 +1,103 @@
+.borderr{
+    border-right: solid 1px #450351;
+  }
+  .borderl{
+    border-left: solid 1px #450351;
+    padding-right: 0px;
+  
+  }  
+.maincol{
+    width: 100%; 
+    color: #4C0054; 
+    font-size: 2vw; 
+    font-family: PPMonument; 
+    font-weight: 900; 
+    line-height: 40px; 
+    word-wrap: break-word; 
+    border-top: solid 1px #4C0054; 
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .maincoltext {
+    padding: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+   
+  }
+
+  .btn1{
+    width: 100%; font-family: PPMonument; 
+    margin-left: 0px;
+    margin-right: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    height: 2.75rem;
+    -webkit-transition: background-color 500ms linear;
+      -ms-transition: background-color 500ms linear;
+      transition: background-color 500ms linear;
+  
+  }
+  .btn2{
+    width: 100%; font-family: RiskGroteskBold; font-weight: 800;
+    margin-left: 2px;
+    margin-right: 0px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-radius: 1.5rem;
+    height: 2.75rem;
+    -webkit-transition: background-color 500ms linear;
+      -ms-transition: background-color 500ms linear;
+      transition: background-color 500ms linear;
+  
+  }
+  .btn3{
+    width: 100%; font-family:PPMonumentExt; font-weight: 200; 
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-radius: 1.5rem;
+    height: 2.75rem;
+    -webkit-transition: background-color 500ms linear;
+      -ms-transition: background-color 500ms linear;
+      transition: background-color 500ms linear;
+  
+  }
+  .btn4{
+    width: 100%; font-family: RiskGroteskItal;
+  
+    border-radius: 1.5rem;
+    height: 2.75rem;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    -webkit-transition: background-color 500ms linear;
+      -ms-transition: background-color 500ms linear;
+      transition: background-color 500ms linear;
+  
+  }
+  .btn5{
+    margin-left: 2px;
+    margin-right: 0px;
+    border-radius: 1.5rem;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    -webkit-transition: background-color 500ms linear;
+      -ms-transition: background-color 500ms linear;
+      transition: background-color 500ms linear;
+  
+  }
+  
+  @media only screen and (max-width: 600px) {
+  
+    .borderr{
+      border-right: none!important;
+    }
+    .borderl{
+      border-left: none!important;
+    }
+  
+  
+  }

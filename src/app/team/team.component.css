@@ -1,0 +1,42 @@
+.teamtitulo {
+
+font-family: RiskGroteskBold;
+line-height: 20px;
+margin-top: 20px;
+
+}
+.teamtext {
+
+    font-family: RiskGroteskItal;
+    line-height: 20px;
+    
+    }
+ .btnteam{
+ border-radius: 20px;
+ background-color: white;
+ border: solid 1px #4C0054;
+ text-decoration: none!important;  
+  box-shadow: 0 1px 2px rgba(0,0,0,0.0);
+ transition: all 0.3s ease-in-out;
+
+ }   
+
+ .btnteam:hover{
+    border-radius: 20px;
+    background-color: red;
+    border: solid 1px #4C0054;
+    text-decoration: none;
+    background-color: RGBA(266, 266, 266, 0.8);
+    box-shadow: 5px 5px 1px rgba(0,0,0,0.8);
+    margin-left: -6px;
+    margin-bottom: 6px;
+   
+    }  
+    .btnteam a {
+      
+        text-decoration: none;
+      
+       
+        }    
+
+

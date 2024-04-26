@@ -1,0 +1,51 @@
+.nav-item a:active {color: #FF7BC9;}
+.nav-item a:focus {color: #FF7BC9;}
+
+.nav-item:hover {
+
+
+color: #E8FF48;
+padding-bottom: 0px;
+-webkit-transition: background-color 500ms linear;
+-ms-transition: background-color 500ms linear;
+transition: background-color 500ms linear;
+
+}
+#btnheader{
+
+    background-color: #FF7BC9;
+    border-radius: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: right;
+    right: -300px;
+    position: absolute;
+    text-align: center;
+    height: 40px;
+    line-height: 22px;
+    border: solid 1px #4C0054;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+#btnheader:hover{
+
+    background-color: #4C0054;
+    border-radius: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    line-height: 22px;
+    border: solid 1px #4C0054;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+
+.navbar-brand{
+    text-align: center;
+    margin-right: 0px;
+    margin-left: 0px;
+   
+  width: 300px;
+  }

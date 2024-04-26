@@ -1,0 +1,56 @@
+
+.textoportfolio{
+    font-family: RiskGroteskCompact; font-weight: 100;
+   color: #450351;
+  
+  } 
+  p {
+
+    font-family: 'HelveticaNeve', light;
+    font-weight: 100;
+  
+    color: #450351;
+
+  } 
+  .btnportfolio{
+    width: auto;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 30px;
+    color: #450351;
+    background-color: #FF7BC9;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+    
+  }
+  .btnportfolio:hover{
+  
+    color: #fff;
+    background-color: #450351;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+    
+  }
+
+
+    
+   
+    a {text-decoration: none;}    
+   h2{
+  
+      color: #4C0054; 
+      font-size: 2vw; 
+      font-family: PPMonument; 
+      font-weight: 900; 
+      line-height: 40px; 
+      word-wrap: break-word; 
+      
+    
+   }   
+       
+ 

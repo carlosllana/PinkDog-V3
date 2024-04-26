@@ -1,1 +1,238 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'PPMonument';
+    src: url('assets/fonts/PPMonumentExtended/PPMonumentExtended-Black.otf');
+}
+@font-face {
+    font-family: 'PPMonumentEXT';
+    src: url('assets/fonts/PPMonumentExtended/PPMonumentExtended-Light.otf');
+}
+@font-face {
+    font-family: 'RiskGroteskItal';
+    src: url('assets/fonts/RightGrotesk/PPRightGrotesk-MediumItalic.otf');
+}
+@font-face {
+    font-family: 'RiskGroteskLight';
+    src: url('assets/fonts/RightGrotesk/PPRightGrotesk-Light.otf');
+}
+@font-face {
+    font-family: 'RiskGroteskBold';
+    src: url('assets/fonts/RightGrotesk/PPRightGrotesk-CompactBlack.otf');
+}
+@font-face {
+  font-family: 'RiskGroteskCompact';
+  src: url('assets/fonts/RightGrotesk/PPRightGrotesk-CompactDark.otf');
+}
+@font-face {
+  font-family: 'HelveticaNeve';
+  src: url('assets/fonts/Helvetica/HelveticaNeue\ Thin.ttf');
+}
+
+p {
+
+    font-family: 'HelveticaNeve', light;
+    font-weight: 100;
+    font-size: 16px;
+    color: #450351;
+
+  }
+  .highlight{background-color: #8EFFD5;line-height: 100px; }
+  a {
+  
+    font-family: 'helvetica', light;
+    font-weight: 100;
+    color: #450351;
+    text-decoration: none;
+
+  }
+  a:hover {
+  
+   
+    color: #E8FF48;
+    text-decoration: none;
+
+  }
+ h2{
+    line-height:3vw;
+    color: #450351;
+    font-family: PPMonument;
+ } 
+
+ .divider{
+
+  height: 100px;
+}
+
+ .btnheader{min-width:40%;}
+.btnrosado {
+
+    background-color: #FF7BC9; border-radius: 1.4em;
+}
+.btnrosado:hover {
+
+    background-color: #450351;
+    color: white; }
+    .btnverde {
+
+        
+    background-color: #E8FF48;
+    border-radius: 1.4em;
+    color: #450351;
+    }
+    .btnverde:hover {
+    
+        background-color: #450351;
+        color: white; 
+        border: solid 1px #E8FF48;
+    }
+
+.text-dark{
+  color: #450351!important;
+}
+.logosmall{
+    display: none;
+}
+.freebrand{
+    color: #4C0054;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+
+.nav-link:hover{
+  
+color: #FF7BC9;
+text-decoration: underline;
+}
+
+
+.fadeOut {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+::view-transition-old(root){animation: exit 2s ease 0s 1 reverse forwards;}
+::view-transition-new(root){animation: enter 2s ease 0s 1 normal forwards;}
+
+
+
+@keyframes enter {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+
+@keyframes exit {
+	0% {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+
+
+
+
+
+
+
+  @media (max-width: 1399.98px)  {
+    
+    
+    }
+
+
+
+
+
+  
+  
+  
+  
+  @media (max-width: 767.98px) {
+
+
+.btnheader{min-width:100%;}
+
+
+#collapsibleNavbar{
+
+
+
+align-items: end;
+justify-content: right;
+font-size: 40px;
+text-align:-webkit-right;
+
+}
+
+.navbar{
+    text-align: right;
+    align-items: end;
+    justify-content: right;
+ 
+    margin-left: 10%;
+   
+    width: 600px;
+ 
+   
+}
+
+.nav{
+    width: 300px;
+    background-color: #E8FF48;
+    text-align: right;
+    
+
+}
+
+#mainnav{
+ 
+    max-width: 100%;
+}
+
+.navbar-brand{
+
+    display: none;
+}
+.logosmall{
+    display: block;
+  left: 10px;
+  margin-left: 10px;
+  position: absolute;
+  margin-top: 10px;
+  margin-right: auto;
+}
+
+.freebrand{
+    background-color: black;
+
+    font-size: 10px;
+    line-height: 28px;
+  }
+
+.w1{font-size: 0.6 rem; line-height: 28px; text-align: justify; text-justify: inter-word; }
+.w2{font-size: 1.6 rem; color: #450351; line-height: 42px; text-align: justify; text-justify: inter-word;  }
+.w4{font-size: 2.6rem; color: #450351; line-height: 42px; text-align: justify; text-justify: inter-word; }
+
+.highlight{line-height: 15px; }
+
+   }
+
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
