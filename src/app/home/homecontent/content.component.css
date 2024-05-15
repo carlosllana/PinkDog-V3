@@ -64,6 +64,14 @@ margin-bottom: 0.2em;
   margin-bottom: 0px;  padding-top:8vw; padding-left: 2vw; padding-bottom: 4vw; padding-right: 10vw;
 }
 
+#logosarriba{
+
+  margin-top: 60px;
+}
+#logosabajo{
+
+  margin-bottom: 60px;
+}
 @media only screen and (max-width: 1440px) {
 
 
@@ -97,7 +105,7 @@ margin-bottom: 0.2em;
 
 @media only screen and (max-width: 768px) {
 
-#logoabajo{
+#logosabajo{
   display: none;
 }
 }

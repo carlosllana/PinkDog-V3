@@ -36,10 +36,10 @@ ngb-carousel {
     z-index: 20;
 }
 .carousel-control-next-icon{
-   
-    
+
+
     transform: rotate(180deg);
-    margin-right: 258%;
+
     z-index: 998;
     position: absolute;
     opacity: 1;
@@ -50,17 +50,17 @@ ngb-carousel {
     box-shadow: 0px 0px 1px rgba(0,0,0,0.1);
 }
 .carousel-control-next-icon:hover{
-   
-   
-    margin-right: 260%;
+
+
+    margin-right: -4%;
     scale: 1.1;
     opacity: 1;
-    box-shadow: -5px -5px 1px rgba(0,0,0,0.8);
+    box-shadow: 5px -5px 1px rgba(0,0,0,0.8);
     transition: all 0.3s ease-in-out;
 }
 .carousel-control-prev-icon{
     transform: rotate(0deg);
-    margin-left: 244%;
+
     scale: 1.1;
     z-index: 998;
     position: absolute;
@@ -72,12 +72,12 @@ ngb-carousel {
     box-shadow: 0px 0px 1px rgba(0,0,0,0.1);
 
 
-    
+
 }
 .carousel-control-prev-icon:hover{
-  
-   
-    margin-left: 242%;
+
+
+    margin-left: -4%;
     scale: 1.1;
     opacity: 1;
     box-shadow: 5px 5px 1px rgba(0,0,0,0.8);

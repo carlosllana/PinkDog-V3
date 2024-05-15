@@ -143,11 +143,6 @@ text-decoration: underline;
 
 
 
-
-
-
-
-
   @media (max-width: 1399.98px)  {
 
     .logosmall {
@@ -165,16 +160,8 @@ float: right;
 right: 0px;
 margin-right: 0px;
 
-
-
-
-
 }
-.navbar{
 
-
-
-  }
 
 
 }
@@ -247,9 +234,9 @@ text-align:-webkit-right;
 }
 
 .freebrand{
-    background-color: black;
 
-    font-size: 10px;
+
+    font-size: 14px;
     line-height: 28px;
   }
 

@@ -4,6 +4,19 @@ color: #4C0054;
 
 
 }
+.pill{
+  margin-top: 10px;
+  background-color: #E8FF48;
+  text-align: center;
+  min-width: 130px;
+  max-width: 140px;
+  float: right;
+  border-radius: 25px;
+  font-size: 18px;
+  font-family: RiskGroteskItal;
+  text-align: center;
+
+  }
 .caselogo{
 
     margin: 6px; margin-right: 10px; margin-top: 0px;

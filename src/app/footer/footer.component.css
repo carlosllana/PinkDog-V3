@@ -22,6 +22,7 @@ p{   color: #4C0054;
    -webkit-transition: background-color 500ms linear;
    -ms-transition: background-color 500ms linear;
    transition: background-color 500ms linear;
+   width: 100%;
  }
 .footerlinks{
 
@@ -31,7 +32,9 @@ p{   color: #4C0054;
 
    line-height: 40px;
 }
-
+#footercentre{
+  border-left:solid 1px white;border-right:solid 1px white; text-align: start;
+}
 .footericons{
 
    margin-left: 0px;
@@ -79,14 +82,18 @@ p{   color: #4C0054;
  }
 
  @media only screen and (max-width: 768px) {
-  .footerlinks{margin-left: 0px;}
+  .footerlinks{margin-left: 10px;}
  #logofooter{
   margin-right: 0px; margin-top: 40px;
   max-height:160px; max-width: 200px;
 }
+.btnverde {max-width: 200px;}
 #menucenter{
 
   text-align: center!important;
 
+}
+#footercentre{
+  border-left:none ;border-right:none; text-align: start;
 }
 }
