@@ -2,3 +2,76 @@
 
   margin-bottom: 20px;
 }
+
+.modal-header{
+  border-bottom: none!important;
+
+}
+.modal-body{
+  padding-bottom: 60px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.form-control{
+
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px #4C0054;
+  border-radius: 0px;
+
+}
+#formulario{
+
+  background-color: white; padding-top: 100px; padding-bottom: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.btn-outline-primary{
+
+  border-radius: 1.3em;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+
+  }
+  input:focus {
+      border: none;
+      border-bottom: 1px solid #8EFFD5!important;
+      box-shadow: #E8FF48;
+
+    }
+    textarea:focus {
+      border: none;
+      border-bottom: 1px solid #8EFFD5!important;
+      box-shadow: #E8FF48;
+
+    }
+
+
+
+
+    .form-control:focus {
+
+      box-shadow: none!important;
+
+
+    }
+    .btnrosado{
+      -webkit-transition: background-color 500ms linear;
+      -ms-transition: background-color 500ms linear;
+      transition: background-color 500ms linear;
+    }
+    .btnheader{
+      -webkit-transition: background-color 500ms linear;
+      -ms-transition: background-color 500ms linear;
+      transition: background-color 500ms linear;
+    }
+
+
+    @media (max-width: 767.98px) {
+
+
+
+
+    }

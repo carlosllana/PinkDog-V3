@@ -1,14 +1,21 @@
-.nav-item a:active {color: #FF7BC9;}
+.nav-item a:active {color: #FF7BC9;
+text-decoration: none;}
 .nav-item a:focus {color: #FF7BC9;}
 
 .nav-item:hover {
 
-
+text-decoration: none;
 color: #E8FF48;
 padding-bottom: 0px;
 -webkit-transition: background-color 500ms linear;
 -ms-transition: background-color 500ms linear;
 transition: background-color 500ms linear;
+
+}
+.nav-link:hover {
+
+  text-decoration: none;
+
 
 }
 #btnheader{
@@ -18,7 +25,7 @@ transition: background-color 500ms linear;
     padding-left: 10px;
     padding-right: 10px;
     float: right;
-    right: -300px;
+    right: -50%;
     position: absolute;
     text-align: center;
     height: 40px;
@@ -46,6 +53,73 @@ transition: background-color 500ms linear;
     text-align: center;
     margin-right: 0px;
     margin-left: 0px;
-   
   width: 300px;
+  }
+
+
+  @media only screen and (max-width: 1400px) {
+
+    #btnheader{
+
+
+      right: -260px;
+
+  }
+
+  }
+  @media only screen and (max-width: 1200px) {
+
+    #btnheader{
+
+
+      right: -180px;
+
+  }
+
+
+  }
+  @media only screen and (max-width: 992px) {
+
+    #btnheader{
+
+
+      right: -120px;
+
+    }
+
+    li {
+      font-size: 12px;
+    }
+
+    .navbar-brand {
+
+      width: 140px;
+
+
+    }
+    .navbar-brand img{
+
+      width: 120px;
+
+
+    }
+
+  }
+  @media only screen and (max-width: 768px) {
+ul{
+  background-color: white;
+}
+    li {
+      width: 100%;
+      height: 120px;
+      font-size: 19px;
+      background-color: white;
+    }
+    #btnheader{
+
+
+      right: -260px;
+
+  }
+
   }

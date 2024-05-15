@@ -17,7 +17,7 @@ export const appConfig: ApplicationConfig = {
       withFetch(),
       withInterceptors([ SpinnerInterceptor]),
     ),
-       
+
 
      provideClientHydration(), provideAnimationsAsync()]
 };

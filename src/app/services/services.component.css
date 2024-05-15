@@ -7,8 +7,15 @@
     margin-right: 4px;
     margin-top: 10px;
     margin-bottom: 10px;
-   
+    background-color: white;
 
+
+}
+.servicesbtn:hover{
+  background-color: #FF7BC9;
+  -webkit-transition: background-color 500ms linear;
+-ms-transition: background-color 500ms linear;
+transition: background-color 500ms linear;
 }
 .servicesbtn2{
 
@@ -19,11 +26,18 @@
     margin-right: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-family:HelveticaNeve ;
- 
-   
-   
+    font-family:'HelveticaNeve' ;
+    background-color: white;
 
+
+
+
+}
+.servicesbtn2:hover{
+  background-color: #FF7BC9;
+  -webkit-transition: background-color 500ms linear;
+-ms-transition: background-color 500ms linear;
+transition: background-color 500ms linear;
 }
 .servicesbtnr2{
 
@@ -34,14 +48,21 @@
     margin-right: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-family:HelveticaNeve ;
+    font-family:'HelveticaNeve' ;
+    background-color: white;
+}
+.servicesbtnr2:hover{
+  background-color: #FF7BC9;
+  -webkit-transition: background-color 500ms linear;
+-ms-transition: background-color 500ms linear;
+transition: background-color 500ms linear;
 }
 .pillservices1{
 margin-top: 10px;
 background-color: #C4A1E0;
 text-align: center;
-min-width: 160px;
-max-width: 180px;
+min-width: 150px;
+max-width: 160px;
 float: right;
 
 }
@@ -50,25 +71,19 @@ float: right;
     font-size: 18px;
     font-family: RiskGroteskItal;
     text-align: center;
-    
+
 }
 
 .pillservices2{
     margin-top: 10px;
     background-color: #E8FF48;
     text-align: center;
-    min-width: 200px;
-    max-width: 240px;
+    min-width: 220px;
+    max-width: 238px;
     float: right;
-    
+
     }
-    .pillservicestxt2{
-    
-        font-size: 18px;
-        font-family: RiskGroteskItal;
-        text-align: center;
-        
-    }
+
     .pillservices3{
         margin-top: 10px;
         background-color: #8EFFD5;
@@ -76,17 +91,11 @@ float: right;
         max-width: 200px;
         float: right;
         text-align: center;
-        
 
-        
+
+
         }
-        .pillservicestxt3{
-        
-            font-size: 18px;
-            font-family: RiskGroteskItal;
-            text-align: center;
-            
-        }    
+
         .pillservices4{
             margin-top: 10px;
             background-color: #C4A1E0;
@@ -94,30 +103,17 @@ float: right;
             min-width: 200px;
             max-width: 240px;
             float: right;
-            
+
          }
-            .pillservicestxt4{
-            
-                font-size: 18px;
-                font-family: RiskGroteskItal;
-                text-align: center;
-                
-         }
+
          .pillservices5{
             margin-top: 10px;
             background-color: #E8FF48;
             text-align: center;
-            min-width: 180px;
-            max-width: 200px;
+            min-width: 160px;
+            max-width: 160px;
             float: right;
-            
-         }
-            .pillservicestxt5{
-            
-                font-size: 18px;
-                font-family: RiskGroteskItal;
-                text-align: center;
-                
+
          }
 
          .pillservicesr1{
@@ -127,50 +123,38 @@ float: right;
             min-width: 160px;
             max-width: 180px;
             float: left;
-            
+
             }
             .pillservicestxtr1{
-            
+
                 font-size: 18px;
                 font-family: RiskGroteskItal;
                 text-align: center;
-                
+
             }
-            
+
             .pillservicesr2{
                 margin-top: 10px;
                 background-color: #E8FF48;
                 text-align: center;
-                min-width: 200px;
-                max-width: 240px;
+                min-width: 120px;
+                max-width: 140px;
                 float: left;
-                
+
                 }
-                .pillservicestxtr2{
-                
-                    font-size: 18px;
-                    font-family: RiskGroteskItal;
-                    text-align: center;
-                    
-                }
+
                 .pillservicesr3{
                     margin-top: 10px;
                     background-color: #8EFFD5;
-                    min-width: 180px;
-                    max-width: 200px;
+                    min-width: 140px;
+                    max-width: 160px;
                     float: left;
                     text-align: center;
-                    
-            
-                    
+
+
+
                     }
-                    .pillservicestxtr3{
-                    
-                        font-size: 18px;
-                        font-family: RiskGroteskItal;
-                        text-align: center;
-                        
-                    }    
+
                     .pillservicesr4{
                         margin-top: 10px;
                         background-color: #C4A1E0;
@@ -178,37 +162,94 @@ float: right;
                         min-width: 200px;
                         max-width: 240px;
                         float: left;
-                        
+
                      }
-                        .pillservicestxtr4{
-                        
-                            font-size: 18px;
-                            font-family: RiskGroteskItal;
-                            text-align: center;
-                            
-                     }
+
                      .pillservicesr5{
                         margin-top: 10px;
                         background-color: #E8FF48;
                         text-align: center;
-                        min-width: 180px;
-                        max-width: 200px;
+                        min-width: 120px;
+                        max-width: 140px;
                         float: left;
-                        
+
                      }
-                        .pillservicestxtr5{
-                        
-                            font-size: 18px;
-                            font-family: RiskGroteskItal;
-                            text-align: center;
-                            
-                     }
+
+                     .pillservices6{
+                      margin-top: 10px;
+                      background-color: #8EFFD5;
+                      min-width: 270px;
+                      max-width: 290px;
+                      float: right;
+                      text-align: center;
+
+
+
+                      }
+
+                      .pillservices7{
+                        margin-top: 10px;
+                        background-color: #E8FF48;
+                        min-width: 260px;
+                        max-width: 270px;
+                        float: right;
+                        text-align: center;
+
+
+
+                        }
+
+                     .pillservicesr8{
+                      margin-top: 10px;
+                      background-color: #E8FF48;
+                      text-align: center;
+                      min-width: 210px;
+                      max-width: 220px;
+                      float: left;
+
+                   }
+                   .pillservicesr9{
+                    margin-top: 10px;
+                    background-color: #C4A1E0;
+                    text-align: center;
+                    min-width: 110px;
+                    max-width: 120px;
+                    float: left;
+
+                 }
+                 .pillservices10{
+                  margin-top: 10px;
+                  background-color: #E8FF48;
+                  text-align: center;
+                  min-width: 190px;
+                  max-width: 200px;
+                  float: right;
+
+               }
+               .pillservices11{
+                margin-top: 10px;
+                background-color: #8EFFD5;
+                text-align: center;
+                min-width: 150px;
+                max-width: 160px;
+                float: right;
+
+             }
+             .pillservicesr12{
+              margin-top: 10px;
+              background-color: #E8FF48;
+              text-align: center;
+              min-width: 260px;
+              max-width: 270px;
+              float: left;}
+
+
 .s1 {
     font-family:PPMonument;
 }
 .s2 {
     font-family:RiskGroteskCompact;
-    
+
 }
 .s3 {
     font-family:PPMonumentEXT;
@@ -221,66 +262,66 @@ float: right;
 
 
 @media (max-width: 1399.98px)  {
-    
+
     .pillservices1{
 
         background-color: #C4A1E0;
         min-width: 180px;
         text-align: center;
         margin-left: 21.8rem;
-        
+
         }
         .pillservicestxt1{
-        
+
             font-size: 15px;
             font-family: RiskGroteskItal;
             text-align: center;
-            
+
         }
-        
+
         .pillservices2{
-        
+
             background-color: #E8FF48;
             min-width: 180px;
             text-align: center;
             margin-left: 20.1rem;
-            
+
             }
             .pillservicestxt2{
-            
+
                 font-size: 15px;
                 font-family: RiskGroteskItal;
                 text-align: center;
-                
+
             }
             .pillservices3{
-        
+
                 background-color: #8EFFD5;
                 min-width: 180px;
                 text-align: center;
                 margin-left: 21.6rem;
-                
+
                 }
                 .pillservicestxt3{
-                
+
                     font-size: 15px;
                     font-family: RiskGroteskItal;
                     text-align: center;
-                    
-                }    
+
+                }
                 .pillservices4{
-        
+
                     background-color: #C4A1E0;
                     min-width: 180px;
                     text-align: center;
                     margin-left: 20rem;
-                    
+
                     }
                     .pillservicestxt4{
-                    
+
                         font-size: 15px;
                         font-family: RiskGroteskItal;
                         text-align: center;
-                        
+
                     }
 }

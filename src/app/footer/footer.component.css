@@ -1,7 +1,7 @@
 a{
    color: white;
    text-decoration: none;
-   font-family: HelveticaNeve; 
+   font-family: HelveticaNeve;
 }
 a:hover{
    color: #E8FF48;
@@ -9,12 +9,12 @@ a:hover{
     -ms-transition: background-color 500ms linear;
     transition: background-color 500ms linear;
 }
-p{   color: #4C0054; 
-   font-size: 16px; 
-   font-family: HelveticaNeve; 
-   font-weight: 100; 
-   word-wrap: break-word; 
-   margin-bottom: 20px; 
+p{   color: #4C0054;
+   font-size: 16px;
+   font-family: HelveticaNeve;
+   font-weight: 100;
+   word-wrap: break-word;
+   margin-bottom: 20px;
 
  }
  h2 {line-height: 28px;}
@@ -27,8 +27,8 @@ p{   color: #4C0054;
 
    margin-top: 42px;
    margin-left: 60px;
- 
-  
+
+
    line-height: 40px;
 }
 
@@ -36,18 +36,18 @@ p{   color: #4C0054;
 
    margin-left: 0px;
    margin-right: 0px;
- 
+
 
 }
 .footericons1{
 
-   margin-left: 14px;
+   margin-left: 26px;
    margin-right: 0px;
-   
+
 
 }
 #logofooter{
-   margin-right: 70px; margin-top: 40px; max-height:160px; max-width: 200px; 
+   margin-right: 120px; margin-top: 40px; max-height:160px; max-width: 200px;
 }
 @media only screen and (max-width: 1200px) {
 
@@ -58,23 +58,35 @@ p{   color: #4C0054;
 
    margin-left: 10px;
    margin-right: 10px;
- 
+
 
 }
 .footericons1{
 
-   margin-left: 10px;
+   margin-left: 26px;
    margin-right: 10px;
-   
+
 
 }
 .footerlinks{
 
    margin-left: 40px;
-   
+
 }
 #logofooter{
-   margin-right: 20px; margin-top: 40px; max-height:120px; max-width: 160px; 
+   margin-right: 20px; margin-top: 40px; max-height:120px; max-width: 160px;
 }
  }
- 
+
+ @media only screen and (max-width: 768px) {
+  .footerlinks{margin-left: 0px;}
+ #logofooter{
+  margin-right: 0px; margin-top: 40px;
+  max-height:160px; max-width: 200px;
+}
+#menucenter{
+
+  text-align: center!important;
+
+}
+}

@@ -2,30 +2,30 @@
    .rating{
     font-family:PPMonumentExt;
     font-size: 10px;
-    color: #4C0054; 
+    color: #4C0054;
     line-height: 10px;
    }
    .points{
     font-family:PPMonument;
     font-size: 20px;
-    color: #4C0054; 
+    color: #4C0054;
     line-height: 10px;
    }
   .botonGoogle{
-    margin-top: 10px; 
-    margin-bottom: 10px; 
-    margin-left: 20px; 
-    margin-right: 20px; 
-    background-color: #8EFFD5; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #8EFFD5;
     border: solid 1px #450351;
     border-radius: 40px;
-  
+
   }
    .bi-star-fill{
-    display:inline; 
-    float: left; 
-    padding-left: 2px; 
-    padding-right: 2px; 
+    display:inline;
+    float: left;
+    padding-left: 2px;
+    padding-right: 2px;
     color: #4C0054;
     font-size: 22px;
     line-height: 10px;
@@ -35,7 +35,7 @@
     text-decoration: none;
    }
 .comment:hover .brosa{
-    
+
     background-color: #FF7BC9;
     -webkit-transition: background-color 500ms linear;
     -ms-transition: background-color 500ms linear;
@@ -43,16 +43,44 @@
 
    }
    .comment:hover .bamarillo{
-    
+
     background-color: #E8FF48;
     -webkit-transition: background-color 500ms linear;
     -ms-transition: background-color 500ms linear;
     transition: background-color 500ms linear;
 
-   }   
+   }
 
- 
+
    @media only screen and (max-width: 1400px) {
 
 
+   }
+
+   @media only screen and (max-width: 1200px) {
+
+    .comment {
+      margin-top: 40px;
+
+          }
+   }
+
+   @media only screen and (max-width: 992px) {
+
+
+   }
+   @media only screen and (max-width: 768px) {
+
+    .comment {
+margin-top: 40px;
+
+    }
+
+.commentparrafo{
+  font-size: 10px;
+}
+.commenttitulo {
+
+  font-size: 10px;
+}
    }

@@ -1,20 +1,19 @@
 
 
-<div class="container-flex" style="border-bottom: solid 1px #4C0054;">
+<div class="container-flex" style="border-bottom: solid 1px #4C0054; ">
 
   <div id="mainnav" class="container">
-    <header class="d-flex justify-content-center py-3"  >
-      <a href="#" class="nav-link navbar-brand logosmall"><img src="../../assets/img/logosmall.svg"></a>
+    <header class="d-flex  py-3 justify-content-center" style="background-color: white!important;" >
 
-      <nav class="navbar navbar-expand-md ">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <nav class="navbar navbar-expand-md navbar bg-body-tertiary justify-content-end" style="background-color: white!important;">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-     <div class="collapse navbar-collapse" id="collapsibleNavbar">
+     <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
 
       <ul class="nav nav-pills" >
-        <li class="nav-item"><a routerLinkActive="active" routerLink="/portfolio" class="nav-link" >Portfolio</a></li>
+        <li class="nav-item"><a routerLinkActive="active" routerLink="/portfolio" class="nav-link"  >Portfolio</a></li>
         <li class="nav-item"><a href="#" class="nav-link" routerLink="/services">Services</a></li>
         <li ><a  routerLink="/home" class="nav-link navbar-brand"><img src="../../assets/img/logo.svg"></a></li>
         <li class="nav-item"><a href="#" class="nav-link" routerLink="/casestudies">What we do</a></li>
@@ -28,5 +27,17 @@
     </header>
   </div>
 
+  </div>
+  <div class="collapse" id="navbarToggleExternalContent" >
+    <div class=" p-4">
+      <ul class="nav nav-pills" >
+        <li class="nav-item"><a routerLinkActive="active" routerLink="/portfolio" class="nav-link"  >Portfolio</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" routerLink="/services">Services</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" routerLink="/casestudies">What we do</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" routerLink="/team">Our team</a></li>
+        <li class="nav-item "><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact</a></li> <!--MODAL BOX-->
+
+      </ul>
+    </div>
   </div>
   <app-modal></app-modal>

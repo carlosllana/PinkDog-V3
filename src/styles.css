@@ -38,7 +38,7 @@ p {
   }
   .highlight{background-color: #8EFFD5;line-height: 100px; }
   a {
-  
+
     font-family: 'helvetica', light;
     font-weight: 100;
     color: #450351;
@@ -46,8 +46,8 @@ p {
 
   }
   a:hover {
-  
-   
+
+
     color: #E8FF48;
     text-decoration: none;
 
@@ -56,7 +56,7 @@ p {
     line-height:3vw;
     color: #450351;
     font-family: PPMonument;
- } 
+ }
 
  .divider{
 
@@ -74,15 +74,15 @@ p {
     color: white; }
     .btnverde {
 
-        
+
     background-color: #E8FF48;
     border-radius: 1.4em;
     color: #450351;
     }
     .btnverde:hover {
-    
+
         background-color: #450351;
-        color: white; 
+        color: white;
         border: solid 1px #E8FF48;
     }
 
@@ -100,7 +100,7 @@ p {
 
 
 .nav-link:hover{
-  
+
 color: #FF7BC9;
 text-decoration: underline;
 }
@@ -149,18 +149,48 @@ text-decoration: underline;
 
 
   @media (max-width: 1399.98px)  {
-    
-    
-    }
+
+    .logosmall {
+      display: block;
+      left: 10px;
+      margin-left: 10px;
+      position: absolute;
+      margin-top: 10px;
+      margin-right: auto;
+  }
+
+  .navbar-toggler{
+
+float: right;
+right: 0px;
+margin-right: 0px;
 
 
 
 
 
-  
-  
-  
-  
+}
+.navbar{
+
+
+
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
   @media (max-width: 767.98px) {
 
 
@@ -182,24 +212,24 @@ text-align:-webkit-right;
     text-align: right;
     align-items: end;
     justify-content: right;
- 
+
     margin-left: 10%;
-   
+
     width: 600px;
- 
-   
+
+
 }
 
 .nav{
     width: 300px;
     background-color: #E8FF48;
     text-align: right;
-    
+
 
 }
 
 #mainnav{
- 
+
     max-width: 100%;
 }
 

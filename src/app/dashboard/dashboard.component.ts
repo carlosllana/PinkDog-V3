@@ -22,7 +22,7 @@ import { MatCardModule } from '@angular/material/card';
     MatCardModule
   ]
 })
-export class DashboardComponent {
+export default class DashboardComponent {
   private breakpointObserver = inject(BreakpointObserver);
 
   /** Based on the screen size, switch from standard to one column per row */

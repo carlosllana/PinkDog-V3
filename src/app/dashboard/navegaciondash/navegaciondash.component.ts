@@ -8,7 +8,6 @@ import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
-import { DashboardComponent } from "../dashboard.component";
 
 @Component({
     selector: 'app-navegaciondash',
@@ -22,7 +21,7 @@ import { DashboardComponent } from "../dashboard.component";
         MatListModule,
         MatIconModule,
         AsyncPipe,
-        DashboardComponent
+
     ]
 })
 export class NavegaciondashComponent {

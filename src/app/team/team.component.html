@@ -1,15 +1,15 @@
 
-<div class=" row justify-content-center align-items-center" style="margin-bottom: 40px; margin-top: 40px;">
+<div class="container-fluid row justify-content-center align-items-center" style="margin-bottom: 40px; margin-top: 40px;">
     <h2 class="text-center col-12 m-0 px-3 py-2" style="font-family:PPMonument; font-size: 48px; ">Our Team</h2>
     <p class="text-center text-dark fs-6 fw-light font-family-Helvetica Neue col-12 m-0 px-3 py-2">You know how a lot of agencies feed you crap about how they are a ‘family’?
         Well, we actually are.</p>
 </div>
 
-<div class="container-fluid" style="background-color: #FF7BC9; height: 547px;">
+<div style="background-color: #FF7BC9; height: 547px;">
 
     <div class="row align-items-center mx-auto align-middle" style="height: 100%;">
         <div class="col-7 mx-auto  align-items-center align-middle" style="height: 100%; background-image: url('../../assets/img/team.png'); background-size: contain; background-repeat: no-repeat; background-position: center; background-position-y:center;">
-           
+
         </div>
 
 
@@ -20,11 +20,11 @@
 
 
 
-<div class="container-fluid" >
+<div >
 <div class="row align-items-center mx-auto align-middle"  >
 <div class="col-3 align-items-center mx-auto align-middle" >
     <p>
-        
+
 You see, Yuri, who leads Pink Dog studio’s industrial and interior design team is the brother of Cata, who runs our film and motion team. And Cata is the partner of Nick who leads the graphic design team.
 
 Now if that doesn’t give us the right to call ourselves family, what does?
@@ -42,7 +42,7 @@ That’s us.
 
     </p>
 </div>
-<div class="col-1"></div>
+
 
 <div class="col-6" style="background-image: url('../../assets/img/team2.png'); background-position: left; margin-left: 0px; padding-left: 0px; background-size: cover; height: 800px; border-left: solid 1px #4C0054;">
 
@@ -56,20 +56,20 @@ That’s us.
 
 
 
-<div class="container-fluid" >
+<div class="align-items-center mx-auto align-middle justify-content-center" >
 
-    <div class=" row"  >
-        <div class=" border border-1 border-dark col-12 justify-content-center align-items-center d-flex"style="margin-bottom: 100px;">
-            <p class="text-center text-dark fs-2 font-family-PP Monument Extended col-xxl-3 m-0 px-3 py-2">Meet the pack</p>
+    <div class=" row align-items-center mx-auto align-middle">
+        <div class=" border border-1 border-dark col-12 justify-content-center align-items-center d-flex">
+            <p class="text-center text-dark fs-2 font-family-PP Monument Extended col-xxl-3 m-0 py-2">Meet the pack</p>
         </div>
 
-        
-        <div class="py-1 col-12 justify-content-center align-items-center d-flex">
-            <div class="col-xxl-9 row justify-content-center align-items-center" >
 
-                
-                <!--TEAM MEMBER-->
-                <div class="col-lg-4 row " style="margin-right: 20px;" >
+        <div class=" col-12 justify-content-center align-items-center d-flex align-items-center mx-auto align-middle" >
+            <div class="col-xxl-9 row align-items-center mx-auto align-middle" *ngIf="mostrarElementoAdicional" >
+
+
+                <!--TEAM MEMBER1-->
+                <div id="team1" class="col-lg-4 row " style="margin-right: 20px; margin-top: 100px;  margin-bottom: 100px;">
                     <div class="position-relative col-12 row" style="background-color: #FF7BC9; width: 266px; height: 500px; border: solid 1px #4C0054;">
                         <div class=" py-1 top-0 position-absolute   col-12">
                             <div class="col-12 row d-flex">
@@ -81,8 +81,8 @@ That’s us.
                             <img src="../../assets/img/teamyuri.png" style="height: 100%; width: 140%; margin-left: -60px;" />
                         </div>
                         <div class="col-11 flex-column justify-content-center align-items-center btnteam" style="height: 43px; bottom: 14px; position: absolute; ">
-                           <a href="#"> <div class="ps-1 col-12">
-                                <p class=" col-12  py-2" style="text-align: center;">Learn More 
+                           <a  (click)="mostrarElemento(1)"> <div class="ps-1 col-12">
+                                <p class=" col-12  py-2" style="text-align: center;">Learn More
                                     <svg class="flechaseemore" width="50" height="20" viewBox="0 0 50 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.499999 9.94737L49.0001 9.94738M49.0001 9.94738L45.3159 5.47369L41.6317 1.00001M49.0001 9.94738L45.3159 14.6842L41.6317 19.4211" stroke="#4C0054" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 10px;"/>
                                     </svg>
@@ -90,12 +90,12 @@ That’s us.
                             </div></a>
                         </div>
                     </div>
-                   
-                </div>
-               <!--TEAM MEMBER-->
 
-  <!--TEAM MEMBER-->
-  <div class="col-lg-4 row " >
+                </div>
+               <!--TEAM MEMBER 1-->
+
+  <!--TEAM MEMBER 2-->
+  <div class="col-lg-4 row " style="margin-top: 100px;  margin-bottom: 100px;" >
     <div class="position-relative col-12 row" style="background-color: #E8FF48; width: 266px; height: 500px; border: solid 1px #4C0054;">
         <div class=" py-1 top-0 position-absolute   col-12">
             <div class="col-12 row d-flex">
@@ -107,8 +107,8 @@ That’s us.
             <img src="../../assets/img/teamcata.png" style="height: 100%; width: 140%; margin-left: -60px;" />
         </div>
         <div class="col-11 flex-column justify-content-center align-items-center btnteam" style="height: 43px; bottom: 14px; position: absolute; ">
-           <a href="#"> <div class="ps-1 col-12">
-                <p class=" col-12  py-2" style="text-align: center;">Learn More 
+           <a (click)="mostrarElemento(2)"> <div class="ps-1 col-12">
+                <p class=" col-12  py-2" style="text-align: center;">Learn More
                     <svg class="flechaseemore" width="50" height="20" viewBox="0 0 50 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.499999 9.94737L49.0001 9.94738M49.0001 9.94738L45.3159 5.47369L41.6317 1.00001M49.0001 9.94738L45.3159 14.6842L41.6317 19.4211" stroke="#4C0054" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 10px;"/>
                     </svg>
@@ -116,13 +116,13 @@ That’s us.
             </div></a>
         </div>
     </div>
-   
+
 </div>
-<!--TEAM MEMBER-->
+<!--TEAM MEMBER 2-->
 
 
-  <!--TEAM MEMBER-->
-  <div class="col-lg-4 row " style="margin-left: 20px;" >
+  <!--TEAM MEMBER 3-->
+  <div class="col-lg-4 row " style="margin-left: 20px; margin-top: 100px;  margin-bottom: 100px;">
     <div class="position-relative col-12 row" style="background-color: #8EFFD5; width: 266px; height: 500px; border: solid 1px #4C0054;">
         <div class=" py-1 top-0 position-absolute   col-12">
             <div class="col-12 row d-flex">
@@ -134,8 +134,8 @@ That’s us.
             <img src="../../assets/img/teamnick.png" style="height: 100%; width: 140%; margin-left: -60px;" />
         </div>
         <div class="col-11 flex-column justify-content-center align-items-center btnteam" style="height: 43px; bottom: 14px; position: absolute; ">
-           <a href="#"> <div class="ps-1 col-12">
-                <p class=" col-12  py-2" style="text-align: center;">Learn More 
+           <a  (click)="mostrarElemento(3)"> <div class="ps-1 col-12">
+                <p class=" col-12  py-2" style="text-align: center;">Learn More
                     <svg class="flechaseemore" width="50" height="20" viewBox="0 0 50 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.499999 9.94737L49.0001 9.94738M49.0001 9.94738L45.3159 5.47369L41.6317 1.00001M49.0001 9.94738L45.3159 14.6842L41.6317 19.4211" stroke="#4C0054" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 10px;"/>
                     </svg>
@@ -143,20 +143,105 @@ That’s us.
             </div></a>
         </div>
     </div>
-   
-</div>
-<!--TEAM MEMBER-->
 
 </div>
-</div>
-
-</div>
-</div>
+<!--TEAM MEMBER 3-->
 
 
 
-<div class="divider" style="background-color: #8EFFD5; margin-top: 100px;"></div>
+</div>
+
+
+<!--TEAM MEMBER 1EXPANDED-->
+<div class="row align-middle" *ngIf="mostrarElemento1" >
+  <div class="col-6" style="background-image: url(../../assets/img/teamYuriFull.png); background-size: contain; background-repeat: no-repeat; background-color: #FF7BC9; background-position: center; border-right: solid 1px #4C0054;  height: 700px;"></div>
+  <div class="col-6 align-items-center justify-content-center mx-auto" style=" min-height: 700px;">
+    <div><button class="closebtn" (click)="cerrarElementos()"><i class="bi bi-x-circle" style="font-size: larger;"></i></button></div>
+
+    <h2 class="col-12" style="font-family:PPMonument; font-size: 48px; margin-top: 26%; margin-left: 11%; position: relative; ">Yuri<br>
+      Trechswjakow</h2>
+    <p class="fs-6 fw-light col-12 m-0 px-3 py-2" style="font-family: PPMonumentEXT;margin-left: 10%;">Founder & MD <br>
+
+      Interior and Architecture</p>
+    <p class=" fs-6 fw-light col-8 px-3 py-2" style="text-align: left;margin-left: 10%;">
+
+      I’m Yuri, founder and MD of Pink Dog Studio Chile, responsible for leading the interior and architecture division of the agency. 
+
+     In this capacity, I oversee projects in the field, support our Chilean team and other partners and maintain communications. 
+
+     My background is in industrial design, but I am also a muralist and illustrator with a passion for art, travel, music and film.
+<br>
+
+
+    </p>
+
+  </div>
+  </div>
+  <!--TEAM MEMBER 1EXPANDED-->
+  <!--TEAM MEMBER 2EXPANDED-->
+  <div class="row align-middle" *ngIf="mostrarElemento2" >
+    <div class="col-6" style="background-image: url(../../assets/img/teamCataFull.png); background-size: contain; background-repeat: no-repeat; background-color: #E8FF48; background-position: center; border-right: solid 1px #4C0054;  height: 700px;"></div>
+    <div class="col-6 align-items-center justify-content-center mx-auto" style=" min-height: 700px;">
+      <div><button class="closebtn" (click)="cerrarElementos()"><i class="bi bi-x-circle" style="font-size: larger;"></i></button></div>
+
+      <h2 class="col-12" style="font-family:PPMonument; font-size: 48px; margin-top: 26%; margin-left: 11%; position: relative; ">Cata<br>
+        Trechswjakow</h2>
+      <p class="fs-6 fw-light col-12 px-3 py-2" style="font-family: PPMonumentEXT;margin-left: 10%;">Founder
+
+     & Creative Director</p>
+      <p class=" fs-6 fw-light col-8 px-3 py-2" style="text-align: left;margin-left: 10%;">
+
+        I’m Cata, the founder and creative director of Pink Dog, responsible for leading the film, motion and photography team and in ensuring that communications run smoothly between our Australian and Chilean teams. (Not always an easy task!)
+
+        Other responsibilities include looking after our social media content and helping with ideation and creative development.
+
+        Originally, I came from a filmmaker background, but over the years I’ve also developed a real passion for photography. 
+
+        I am known within Pink Dog for having an obsessive eye for detail. And this fortunate (or unfortunate depending on the day) trait sees me acting as the final check on all finished deliverables before they go out.
+  <br>
+
+
+      </p>
+
+    </div>
+    </div>
+  <!--TEAM MEMBER 2 EXPANDED-->
+
+
+  <!--TEAM MEMBER 3EXPANDED-->
+  <div class="row align-middle" *ngIf="mostrarElemento3" >
+    <div class="col-6" style="background-image: url(../../assets/img/teamNickFull.png); background-size: contain; background-repeat: no-repeat; background-color: #8EFFD5; background-position: center; border-right: solid 1px #4C0054;  height: 700px;"></div>
+    <div class="col-6 align-items-center justify-content-center mx-auto" style=" min-height: 700px;">
+      <div><button class="closebtn" (click)="cerrarElementos()"><i class="bi bi-x-circle" style="font-size: larger;"></i></button></div>
+
+      <h2 class="col-12" style="font-family:PPMonument; font-size: 48px; margin-top: 26%; margin-left: 11%; position: relative; ">Nick
+        <br>  Akkanen
+     </h2>
+      <p class="fs-6 fw-light col-12 px-3 py-2" style="font-family: PPMonumentEXT;margin-left: 10%;">MD &  <br>
+
+        Design Lead</p>
+      <p class=" fs-6 fw-light col-8  px-3 py-2" style="text-align: left;margin-left: 10%;">
+
+        I’m Nick, managing director of Pink Dog Studio, creative, designer and general pink dogsbody. I lead the design team and ensure they have everything they need to produce great work. 
+
+        Throughout my career I have worked in print, digital, web design and email development. This broad range of experience has given me a good understanding of agency process and enables me to ascertain at a glance that we have the right team with the right skills in the room. 
+
+        Outside of work (which is rare) I like nothing more than working on DIY projects such as restoring furniture and working on old cars.
+  <br>
+
+
+      </p>
+
+    </div>
+    </div>
+  <!--TEAM MEMBER 3EXPANDED-->
+
+</div>
+</div></div>
+
+
+<div class="divider" style=" margin-top: 0px; border-top: solid 1px #4C0054;"></div>
 
 <app-home-brand-consultation></app-home-brand-consultation>
 
-<div class="divider" style="background-color: #8EFFD5; margin-bottom: 100px;"></div>
+<div class="divider" style=" margin-bottom: 100px; border-bottom: solid 1px #4C0054;"></div>

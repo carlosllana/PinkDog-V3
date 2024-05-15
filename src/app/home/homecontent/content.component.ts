@@ -4,7 +4,11 @@ import { HomeBrandConsultationComponent } from "../home-brand-consultation/home-
 import { HomeAboutComponent } from "../home-about/home-about.component";
 import { RouterLink} from '@angular/router';
 import { ModalComponent } from '../modal/modal.component';
-
+import { HomePortfolio1Component } from "../home-portfolio/home-portfolio.component";
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
+import { Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { PageScrollService } from 'ngx-page-scroll-core';
 
 
 @Component({
@@ -12,11 +16,17 @@ import { ModalComponent } from '../modal/modal.component';
     standalone: true,
     templateUrl: './content.component.html',
     styleUrl: './content.component.css',
-    imports: [GcommentsComponent, HomeBrandConsultationComponent, HomeAboutComponent, RouterLink,ModalComponent,]
+    imports: [GcommentsComponent, HomeBrandConsultationComponent, HomeAboutComponent, RouterLink, ModalComponent, HomePortfolio1Component, NgxPageScrollCoreModule]
 })
 export class ContentComponent {
+  constructor(private pageScrollService: PageScrollService, @Inject(DOCUMENT) private document: any ) {
+  }
 
+  ngOnInit(): void {
+   this.pageScrollService.scroll({
+     document: this.document,
+     scrollTarget: '.theEnd',
+   });
+  }
+ }
 
-
-
-}

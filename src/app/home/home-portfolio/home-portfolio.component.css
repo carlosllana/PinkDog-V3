@@ -2,16 +2,20 @@
 .textoportfolio{
     font-family: RiskGroteskCompact; font-weight: 100;
    color: #450351;
-  
-  } 
+
+  }
+ .imgporfhome{
+
+  float: right; display: inline; max-width: 100px;
+ }
   p {
 
     font-family: 'HelveticaNeve', light;
     font-weight: 100;
-  
+
     color: #450351;
 
-  } 
+  }
   .btnportfolio{
     width: auto;
     height: 60px;
@@ -25,32 +29,41 @@
     -webkit-transition: background-color 500ms linear;
     -ms-transition: background-color 500ms linear;
     transition: background-color 500ms linear;
-    
+
   }
   .btnportfolio:hover{
-  
+
     color: #fff;
     background-color: #450351;
     -webkit-transition: background-color 500ms linear;
     -ms-transition: background-color 500ms linear;
     transition: background-color 500ms linear;
-    
+
   }
 
 
-    
-   
-    a {text-decoration: none;}    
+
+
+    a {text-decoration: none;}
    h2{
-  
-      color: #4C0054; 
-      font-size: 2vw; 
-      font-family: PPMonument; 
-      font-weight: 900; 
-      line-height: 40px; 
-      word-wrap: break-word; 
-      
-    
-   }   
-       
- 
+
+      color: #4C0054;
+      font-size: 2vw;
+      font-family: PPMonument;
+      font-weight: 900;
+      line-height: 40px;
+      word-wrap: break-word;
+
+
+   }
+
+   @media only screen and (max-width: 768px) {
+
+
+    .imgporfhome{
+
+ max-width: 10px;
+     }
+
+
+   }
