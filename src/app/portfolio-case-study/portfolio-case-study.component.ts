@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { PortfoliocarouselComponent } from "../portfoliocarousel/portfoliocarousel.component";
-import { HomeBrandConsultationComponent } from '../../home/home-brand-consultation/home-brand-consultation.component';
-import { CarouselcasestudiesComponent } from '../carouselcasestudies/carouselcasestudies.component';
+import { PortfoliocarouselComponent } from "../portfolio/portfoliocarousel/portfoliocarousel.component";
+import { HomeBrandConsultationComponent } from '../home/home-brand-consultation/home-brand-consultation.component';
+import { CarouselcasestudiesComponent } from '../portfolio/carouselcasestudies/carouselcasestudies.component';
 
 @Component({
     selector: 'app-portfolio-case-study',

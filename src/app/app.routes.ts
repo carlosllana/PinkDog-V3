@@ -24,8 +24,8 @@ export const routes: Routes = [
 
 {
 
-  path: 'casestudies',
-  loadComponent: () => import('./portfolio/portfolio-case-study/portfolio-case-study.component'),
+  path: 'casetudies',
+  loadComponent: () => import('./portfolio-case-study/portfolio-case-study.component'),
 
 },
 

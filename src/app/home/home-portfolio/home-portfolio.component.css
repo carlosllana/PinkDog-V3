@@ -1,7 +1,18 @@
 
+button{background-color: white;
+border: none;
+padding-left: 0px;}
 .textoportfolio{
     font-family: RiskGroteskCompact; font-weight: 100;
    color: #450351;
+   font-size: 28px;
+   line-height: 30px;
+
+  }
+  .textoportfolio2{
+   color: #450351;
+   font-size: 16px;
+   line-height: 20px;
 
   }
  .imgporfhome{
@@ -18,14 +29,15 @@
   }
   .btnportfolio{
     width: auto;
-    height: 60px;
+    height: 40px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 100px;
     padding-right: 100px;
     border-radius: 30px;
+    border: solid 1px #450351;
     color: #450351;
-    background-color: #FF7BC9;
+    background-color: white;
     -webkit-transition: background-color 500ms linear;
     -ms-transition: background-color 500ms linear;
     transition: background-color 500ms linear;
@@ -56,7 +68,24 @@
 
 
    }
-
+   @media only screen and (max-width: 1400px) {
+    .textoportfolio{
+      font-size: 22px;
+    }
+    .textoportfolio2{
+      font-size: 14px;
+    }
+   }
+   @media only screen and (max-width: 1200px) {
+    .textoportfolio{
+      font-size: 20px;
+      padding-left: 0px!important;
+    }
+    .textoportfolio2{
+      font-size: 12px;
+      padding-left: 0px!important;
+    }
+   }
    @media only screen and (max-width: 768px) {
 
 

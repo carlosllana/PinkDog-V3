@@ -82,7 +82,11 @@ p{   color: #4C0054;
  }
 
  @media only screen and (max-width: 768px) {
-  .footerlinks{margin-left: 10px;}
+  .footerlinks{
+    margin-left: 20px;
+    margin-top: 0px;
+
+  }
  #logofooter{
   margin-right: 0px; margin-top: 40px;
   max-height:160px; max-width: 200px;
@@ -93,7 +97,21 @@ p{   color: #4C0054;
   text-align: center!important;
 
 }
-#footercentre{
+#footercenter{
   border-left:none ;border-right:none; text-align: start;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
+.footerlinks2 {
+
+margin-left: -18px;
+}
+.footericons {
+
+  margin-left: 10px;
+}
+
+
+
+
 }
