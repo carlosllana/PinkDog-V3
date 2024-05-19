@@ -24,10 +24,17 @@ export const routes: Routes = [
 
 {
 
-  path: 'casetudies',
-  loadComponent: () => import('./portfolio-case-study/portfolio-case-study.component'),
+  path: 'casestudies',
+  loadComponent: () => import('./portfolio/portfolio-case-study/portfolio-case-study.component'),
 
 },
+{
+
+  path: 'casestudies2',
+  loadComponent: () => import('./portfolio/portfolio-case-study2/portfolio-case-study2.component'),
+
+},
+
 
 
 {
