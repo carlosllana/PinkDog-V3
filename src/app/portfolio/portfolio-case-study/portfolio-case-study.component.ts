@@ -12,5 +12,6 @@ import { RouterLink } from '@angular/router';
     imports: [PortfoliocarouselComponent, HomeBrandConsultationComponent, CarouselcasestudiesComponent, RouterLink]
 })
 export default class PortfolioCaseStudyComponent {
+  activeSlideIndex = 2;
 
 }

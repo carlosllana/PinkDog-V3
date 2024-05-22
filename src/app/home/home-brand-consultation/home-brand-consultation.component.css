@@ -54,12 +54,37 @@
       }
 
 
+      @media (max-width: 1400px) {
+
+
+        .freebrand{
+
+          font-size: 32px;
+          line-height: 30px;
+        } }
+      @media (max-width: 1200px) {
+
+
+        .freebrand{
+
+          font-size: 22px;
+        }
+
+
+
+
+
+              }
+
       @media (max-width: 992px) {
 
 
 .freebrand{
 
-  font-size: 14px;
+  font-size: 34px;
+}
+#logoform{
+  display: none;
 }
 
 
@@ -67,3 +92,25 @@
 
 
       }
+
+      @media (max-width: 576px) {
+
+
+        .freebrand{
+
+          font-size: 38px;
+          line-height: 38px;
+        }
+        #freebrandtxt{
+
+        border-bottom: solid 1px #4C0054;
+        }
+        #logoform{
+          display: none;
+        }
+
+
+
+
+
+              }

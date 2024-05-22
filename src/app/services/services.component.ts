@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ServicescarouselComponent } from "./servicescarousel/servicescarousel.component";
 import { HomeBrandConsultationComponent } from "../home/home-brand-consultation/home-brand-consultation.component";
+import { ExtraOptions } from '@angular/router';
 
 @Component({
     selector: 'app-services',
@@ -10,9 +11,12 @@ import { HomeBrandConsultationComponent } from "../home/home-brand-consultation/
     imports: [ServicescarouselComponent, HomeBrandConsultationComponent]
 })
 export default class ServicesComponent {
+
   scrollTo(element: any): void {
     (document.getElementById(element) as HTMLElement).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
 
 
+
 }
+

@@ -50,17 +50,38 @@
     transition: background-color 500ms linear;
 
    }
+   .commenttitulo {
 
+    font-family: PPMonument;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    padding-left: 30px;
+    color: #450351;
+  }
+  .commnettitulosub  {
+
+    font-family:PPMonumentExt;
+    padding-left: 30px;
+    padding-left: 30px;
+    color: #450351;
+  }
+  .gimage {
+
+    height: 32px; width: 32px; margin-top:14px;
+  }
 
    @media only screen and (max-width: 1400px) {
 
+    .comment {
+      margin-top: 20px;
 
+          }
    }
 
    @media only screen and (max-width: 1200px) {
 
     .comment {
-      margin-top: 40px;
+      margin-top: 20px;
 
           }
    }
@@ -83,4 +104,36 @@ margin-top: 40px;
 
   font-size: 10px;
 }
+.bi-star-fill {
+
+  font-size: 16px;
+}
    }
+
+   @media only screen and (max-width: 500px) {
+
+    .comment {
+margin-top: 20px;
+
+
+    }
+    .commenttitulo {
+
+      padding-left: 0px;
+
+    }
+    .commnettitulosub  {
+
+
+
+      padding-left: 0px;
+      color: #450351;
+    }
+    .bi-star-fill {
+
+      font-size: 12px;
+    }
+
+
+
+  }

@@ -34,6 +34,12 @@ export const routes: Routes = [
   loadComponent: () => import('./portfolio/portfolio-case-study2/portfolio-case-study2.component'),
 
 },
+{
+
+  path: 'casestudies3',
+  loadComponent: () => import('./portfolio/portfolio-case-study3/portfolio-case-study3.component'),
+
+},
 
 
 
@@ -64,9 +70,3 @@ path:'',
 
 ];
 
-
-
-export const routerOptions: ExtraOptions = {
-  scrollPositionRestoration: 'enabled',
-  anchorScrolling: 'enabled',
-};

@@ -1,21 +1,19 @@
 <div id="carouselExampleFade" class="carousel slide carousel-fade">
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="../../../assets/img/carousel_casestudies1.png" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="../../../assets/img/carousel_casestudies2.png" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="../../../assets/img/carousel1.png" class="d-block w-100" alt="...">
+    <div class="carousel-item" *ngFor="let item of items; let i = index" [class.active]="i === activeSlideIndex">
+      <img [src]="item.src" class="d-block w-100" [alt]="item.alt">
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"><img src="../../../assets/img/portfolio/sliderarrow.svg" style="margin-top: 10px; transform: rotate(180);"></span>
+  <button class="carousel-control-prev" type="button" [routerLink]="prevRoute">
+    <span class="carousel-control-prev-icon" aria-hidden="true">
+      <img src="../../../assets/img/portfolio/sliderarrow.svg" style="margin-top: 10px;">
+    </span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"><img src="../../../assets/img/portfolio/sliderarrow.svg" style="margin-top: 10px;"></span>
+  <button class="carousel-control-next" type="button" [routerLink]="nextRoute">
+    <span class="carousel-control-next-icon" aria-hidden="true">
+      <img src="../../../assets/img/portfolio/sliderarrow.svg" style="margin-top: 10px;">
+    </span>
     <span class="visually-hidden">Next</span>
   </button>
 </div>
