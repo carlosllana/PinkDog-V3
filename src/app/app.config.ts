@@ -14,7 +14,7 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes, withViewTransitions()
        ),
     provideHttpClient(
-      withFetch(),
+
       withInterceptors([ SpinnerInterceptor]),
     ),
 

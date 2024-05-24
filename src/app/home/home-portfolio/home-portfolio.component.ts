@@ -12,7 +12,7 @@ import { CommonModule, NgIf } from '@angular/common';
 export class HomePortfolio1Component {
   title = 'mouse-hover';
   showImage: boolean = true;
-  currentImage: string = '../../../assets/img/homeportfolio3.png'; // Inicializa con la primera imagen
+  currentImage: string = '../../../assets/img/homeportfolio2.png'; // Inicializa con la primera imagen
 
   constructor() {}
 

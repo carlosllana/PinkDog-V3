@@ -1,72 +1,51 @@
-import { Component } from '@angular/core';
-import { Routes } from '@angular/router';
-import { ExtraOptions } from '@angular/router';
-import path from 'path';
-
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes, ExtraOptions } from '@angular/router';
 
 export const routes: Routes = [
-
-
-
   {
-
-  path: 'home',
-  loadComponent: () => import('./home/home.component'),
-
-
-},
-{
-
-  path: 'portfolio',
-  loadComponent: () => import('./portfolio/portfolio.component'),
-
-},
-
-{
-
-  path: 'casestudies',
-  loadComponent: () => import('./portfolio/portfolio-case-study/portfolio-case-study.component'),
-
-},
-{
-
-  path: 'casestudies2',
-  loadComponent: () => import('./portfolio/portfolio-case-study2/portfolio-case-study2.component'),
-
-},
-{
-
-  path: 'casestudies3',
-  loadComponent: () => import('./portfolio/portfolio-case-study3/portfolio-case-study3.component'),
-
-},
-
-
-
-{
-
-  path: 'team',
-  loadComponent: () => import('./team/team.component'),
-
-},
-{
-
-  path: 'services',
-  loadComponent: () => import('./services/services.component'),
-
-},
-{
-
-  path: 'dashboard',
-  loadComponent: () => import('./dashboard/dashboard.component'),
-
-},
-
-
-{
-path:'',
- loadComponent: () => import('./home/home.component'),}
-
-
+    path: 'home',
+    loadComponent: () => import('./home/home.component').then(m => m.default),
+  },
+  {
+    path: 'portfolio',
+    loadComponent: () => import('./portfolio/portfolio.component').then(m => m.default),
+  },
+  {
+    path: 'casestudies',
+    loadComponent: () => import('./portfolio/portfolio-case-study/portfolio-case-study.component').then(m => m.default),
+  },
+  {
+    path: 'casestudies2',
+    loadComponent: () => import('./portfolio/portfolio-case-study2/portfolio-case-study2.component').then(m => m.default),
+  },
+  {
+    path: 'casestudies3',
+    loadComponent: () => import('./portfolio/portfolio-case-study3/portfolio-case-study3.component').then(m => m.default),
+  },
+  {
+    path: 'team',
+    loadComponent: () => import('./team/team.component').then(m => m.default),
+  },
+  {
+    path: 'services',
+    loadComponent: () => import('./services/services.component').then(m => m.default),
+  },
+  {
+    path: 'dashboard',
+    loadComponent: () => import('./dashboard/dashboard.component').then(m => m.default),
+  },
+  {
+    path: '',
+    loadComponent: () => import('./home/home.component').then(m => m.default),
+  }
 ];
 
+const routerOptions: ExtraOptions = {
+  scrollPositionRestoration: 'enabled',
+};
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes, routerOptions)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }

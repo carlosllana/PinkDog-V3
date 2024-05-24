@@ -194,6 +194,16 @@ margin-bottom: 0.2em;
   }
 
 }
+@media only screen and (max-width: 687px) {
+
+
+  .w1{font-size: 20px; line-height: 22px;}
+  .w2{font-size: 60px; line-height: 56px; }
+  .w3{font-size: 58px;  line-height: 56px;}
+  .w4{font-size: 66px; line-height: 56px; }
+  .w5{font-size: 50px; line-height: 56px;}
+   .w6{font-size: 34px; line-height:22px; }
+   .highlight{line-height: 62px;}}
 
 @media only screen and (max-width: 576px) {
 

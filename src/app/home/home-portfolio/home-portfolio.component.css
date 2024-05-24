@@ -2,6 +2,12 @@
 button{background-color: white;
 border: none;
 padding-left: 0px;}
+
+#imgporfoliohome{
+
+  width: 120%; height: auto; overflow: hidden; text-align: center; margin-left: -9%; margin-top: -4%;
+
+}
 .textoportfolio{
     font-family: RiskGroteskCompact; font-weight: 100;
    color: #450351;
@@ -71,14 +77,33 @@ padding-left: 0px;}
 
 
    @media only screen and (max-width: 1400px) {
+
+    #imgporfoliohome{
+
+      width: 124%; height: auto; overflow: hidden; text-align: center; margin-left: -12%; margin-top: -1%;
+
+    }
+
+
     .textoportfolio{
       font-size: 22px;
+
+
     }
+
+
     .textoportfolio2{
       font-size: 14px;
     }
    }
    @media only screen and (max-width: 1200px) {
+
+    #imgporfoliohome{
+
+      width: 150%; height: auto; overflow: hidden; text-align: center; margin-left: -24%; margin-top: -1%;
+
+    }
+
     .textoportfolio{
       font-size: 20px;
       padding-left: 0px!important;
@@ -89,6 +114,11 @@ padding-left: 0px;}
     }
    }
    @media only screen and (max-width: 768px) {
+    #imgporfoliohome{
+
+      width: 130%; height: auto; overflow: hidden; text-align: center; margin-left: -14%; margin-top: 0%;
+
+    }
 
 
     .imgporfhome img{
@@ -98,11 +128,37 @@ padding-left: 0px;}
 
 
    }
+   @media only screen and (max-width: 576px) {
+
+    h2{
+
+      font-size: 24px;
+    }
+
+    #imgporfoliohome{
+
+      width: 140%; height: auto; overflow: hidden; text-align: center; margin-left: -18%; margin-top: 0%;
+
+    }
+
+   }
 
 
    @media only screen and (max-width: 375px) {
+    #btnporfoliohome{
+      margin-top: 16px;
+    }
+.containerimgporfoliohome{
 
+  margin-top: 40px;
+}
+    #imgporfoliohome{
 
+      border-top: solid 1px #450351;
+
+      width: 190%; height: auto; overflow: hidden; text-align: center; margin-left: -42%; margin-top: 0%;
+
+    }
   h2{font-size: 20px;}
   .textosubtitulo{
     line-height: 26px;

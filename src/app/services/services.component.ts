@@ -10,7 +10,7 @@ import { ExtraOptions } from '@angular/router';
     styleUrl: './services.component.css',
     imports: [ServicescarouselComponent, HomeBrandConsultationComponent]
 })
-export default class ServicesComponent {
+export default class ServicesComponent  {
 
   scrollTo(element: any): void {
     (document.getElementById(element) as HTMLElement).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});

@@ -13,5 +13,4 @@ import { RouterLink } from '@angular/router';
 })
 export default class PortfolioCaseStudyComponent {
   activeSlideIndex = 2;
-
 }

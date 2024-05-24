@@ -1,9 +1,26 @@
+h2{
+
+  line-height: 40px;
+
+}
+
+#teamhero{
+
+  height: 90%;
+   background-image: url('../../assets/img/team.png');
+    background-size: contain; background-repeat: no-repeat;
+    background-position: center; background-position-y:center;
+}
 .teamtitulo {
 
 font-family: RiskGroteskBold;
 line-height: 20px;
 margin-top: 20px;
 
+}
+.team{
+  margin-top: 145px;
+  margin-bottom: 105px;
 }
 .teamtext {
 
@@ -58,4 +75,24 @@ font-size: 20px;
 
 .elemento.visible {
   opacity: 1; /* Cuando la clase 'visible' está presente, establece la opacidad a 1 */
+}
+
+
+
+@media only screen and (max-width: 576px) {
+
+  #teamhero{
+
+    height: 90%;
+     background-image: url('../../assets/img/team_movile.png');
+      background-size: contain; background-repeat: no-repeat;
+      background-position: center; background-position-y:center;
+  }
+  p{
+
+    font-size: 12px;
+  }
+  .team{
+    margin-top: 10px;  margin-bottom: 10px;
+  }
 }

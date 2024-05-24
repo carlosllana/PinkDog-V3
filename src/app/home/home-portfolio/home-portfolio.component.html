@@ -66,16 +66,16 @@
       <!--END BTN-->
 
 
-          <div class="px-1 py-1 bg-white  col-12 d-flex">
-              <div class="px-1 py-1 col-12 justify-content-center align-items-center" style="text-align: center;">
+          <div id="btnporfoliohome" class="px-1 py-1 bg-white  col-12 d-flex">
+              <div class="px-1 py-1  col-12 justify-content-center align-items-center" style="text-align: center;">
                 <button class="btn btn-primary w-auto  btnportfolio" style="  text-align: center;" type="button" routerLink="/portfolio">Go to Portfolio</button>
               </div>
           </div>
       </div>
 
-        <div class=" col-lg-6  col-md-12"  style="  overflow: hidden; padding-left: 0px;  background-color: aqua;height: 418px; border-left:solid 1px #450351">
+        <div class=" col-lg-6  col-md-12 containerimgporfoliohome"  style="overflow: hidden; padding-left: 0px;height: 418px; border-left:solid 1px #450351">
 
-            <img *ngIf="showImage" [src]="currentImage" alt="Hovered Image" style="width: auto; height: auto; overflow: hidden;" />
+            <img id="imgporfoliohome" *ngIf="showImage" [src]="currentImage" alt="Hovered Image" />
 
 
         </div>
