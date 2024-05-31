@@ -1,9 +1,11 @@
 <div id="carouselExampleFade" class="carousel slide carousel-fade">
   <div class="carousel-inner">
     <div class="carousel-item" *ngFor="let item of items; let i = index" [class.active]="i === activeSlideIndex">
-      <img [src]="item.src" class="d-block w-100 desktop" [alt]="item.alt">
-      <img [src]="item.src" class="d-block w-100 mobile" [alt]="item.alt">
-
+      <picture>
+        <source srcset="{{item.srcSmall}}" media="(max-width: 767px)">
+        <source srcset="{{item.src}}" media="(min-width: 768px)">
+        <img [src]="item.src" class="d-block w-100" [alt]="item.alt">
+      </picture>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" [routerLink]="prevRoute">

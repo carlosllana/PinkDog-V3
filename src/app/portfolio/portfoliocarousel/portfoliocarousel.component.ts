@@ -15,9 +15,24 @@ export class PortfoliocarouselComponent implements AfterViewInit {
   @Input() activeSlideIndex: number = 0; // Define el @Input
 
   items = [
-    { src: '../../../assets/img/carousel_casestudies1.png', alt: 'First slide', route: '/casestudies' },
-    { src: '../../../assets/img/carousel_casestudies2.png', alt: 'Second slide', route: '/casestudies2' },
-    { src: '../../../assets/img/carousel_casestudies3.png', alt: 'Third slide', route: '/casestudies3' }
+    {
+      src: '../../../assets/img/carousel_casestudies1.png',
+      srcSmall: '../../../assets/img/carousel_casestudies1_small.png',
+      alt: 'First slide',
+      route: '/casestudies'
+    },
+    {
+      src: '../../../assets/img/carousel_casestudies2.png',
+      srcSmall: '../../../assets/img/carousel_casestudies2_small.png',
+      alt: 'Second slide',
+      route: '/casestudies2'
+    },
+    {
+      src: '../../../assets/img/carousel_casestudies3.png',
+      srcSmall: '../../../assets/img/carousel_casestudies3_small.png',
+      alt: 'Third slide',
+      route: '/casestudies3'
+    }
   ];
 
   get nextRoute(): string {
