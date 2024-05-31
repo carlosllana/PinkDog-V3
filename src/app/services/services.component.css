@@ -269,6 +269,27 @@ float: right;
 
 @media (max-width: 1399.98px)  {
 
+
+.servicesbtn{
+
+  border-radius: 30px;
+  border: solid 1px #4C0054;
+  height: 34px;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.servicesbtn p{
+
+  font-size: 12px;
+
+
+
+
+}
+
+
     .pillservices1{
 
         background-color: #C4A1E0;
@@ -331,3 +352,10 @@ float: right;
 
                     }
 }
+@media (max-width: 768px)  {
+
+
+.ocultar{display:none;}
+
+}
+

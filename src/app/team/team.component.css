@@ -1,9 +1,13 @@
 h2{
 
   line-height: 40px;
-
+  font-size: 48px;
+  font-family: PPMonument;
+  margin-top: 16%;
+  margin-left: 11%;
+  position: relative;
 }
-
+.membertxt{height: 700px;}
 #teamhero{
 
   height: 90%;
@@ -66,6 +70,7 @@ height: 30px;
 float: right;
 background-color:transparent!important;
 font-size: 20px;
+margin-top: -10%;
 
 }
 .elemento {
@@ -76,10 +81,21 @@ font-size: 20px;
 .elemento.visible {
   opacity: 1; /* Cuando la clase 'visible' está presente, establece la opacidad a 1 */
 }
+@media only screen and (max-width: 1140px) {
+  .membertxt{min-height: 1400px;}
+h2{
+  font-size: 24px;
+  line-height: 20px;
+  margin-left: 12%;
+}
+
+}
 
 
 
 @media only screen and (max-width: 576px) {
+  .membertxt{min-height: 1400px;}
+  #team1 { margin-top: 100px;}
 
   #teamhero{
 
@@ -94,5 +110,10 @@ font-size: 20px;
   }
   .team{
     margin-top: 10px;  margin-bottom: 10px;
+  }
+  h2{
+    font-size: 24px;
+    line-height: 50px;
+
   }
 }
