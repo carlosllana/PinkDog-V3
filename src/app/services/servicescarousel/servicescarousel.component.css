@@ -16,9 +16,9 @@ ngb-carousel {
 }
 .carousel-item {
 
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 1.2s ease-in-out, visibility 1.2s;
+    opacity: 1;
+    visibility: visible;
+    transition:2s ease-in-out;
     z-index: -1;
 }
 .carousel-item img.mobile {

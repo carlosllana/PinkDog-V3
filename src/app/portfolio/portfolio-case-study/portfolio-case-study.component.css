@@ -4,6 +4,13 @@ color: #4C0054;
 
 
 }
+#bltimgl2{
+  background-image: url('../../../assets/img/portfolio/photol2.png'); background-size: cover; height:550px; float: right; text-align: right; padding: 0px;
+
+}
+.d-only-sm-flex {
+  display:flex;
+}
 .pill{
   margin-top: 10px;
   background-color: #E8FF48;
@@ -20,4 +27,38 @@ color: #4C0054;
 .caselogo{
 
     margin: 6px; margin-right: 10px; margin-top: 0px;
+}
+.caseleft{
+  border-left: solid 1px #4C0054; border-right:solid 1px #4C0054; margin-top: 0px; padding-top: 100px; padding-bottom: 100px;
+}
+#columna2{
+  height: 550px; text-align: right; padding: 0px;
+}
+
+@media only screen and (max-width: 576px) {
+
+
+  .noborder{
+    border-left: none!important;
+     border-right:none!important;;
+
+  }
+  .d-only-sm-flex {
+    display:inline-block !important;
+}
+
+#columna2{
+  height: 350px; text-align: center;
+
+}
+#columna3{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#bltimgl2{
+ background-size: cover; height:550px; float: right; text-align: right; padding: 0px; width: 100%;
+
+}
+
 }

@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes, ExtraOptions } from '@angular/router';
+import { RouterModule, Routes, ExtraOptions, Router, NavigationEnd } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
+import { filter } from 'rxjs/operators';
 
 export const routes: Routes = [
   {
@@ -41,11 +43,19 @@ export const routes: Routes = [
 ];
 
 const routerOptions: ExtraOptions = {
-  scrollPositionRestoration: 'enabled',
+  scrollPositionRestoration: 'enabled', // Restablece la posición de desplazamiento
 };
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, routerOptions)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+  constructor(private router: Router, private viewportScroller: ViewportScroller) {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      this.viewportScroller.scrollToPosition([0, 0]);
+    });
+  }
+}

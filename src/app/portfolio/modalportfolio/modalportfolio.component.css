@@ -1,1 +1,13 @@
 img {margin: 10px;}
+.btn-close{color: #4C0054; border: solid 1px #4C0054; border-radius: 30px;}
+.btn-close:focus{box-shadow:#4C0054!important;}
+.modal-header{border-bottom: none!important;}
+
+
+@media (max-width: 576px) {
+
+
+
+  .worktitle{margin-bottom: 60px; margin-top: 10px;}
+
+  }

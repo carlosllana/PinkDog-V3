@@ -1,5 +1,5 @@
-import { Component, Input, AfterViewInit } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Component, Input, AfterViewInit, OnDestroy } from '@angular/core';
+import { Router } from '@angular/router';
 import { NgFor } from '@angular/common';
 
 declare var bootstrap: any;
@@ -7,12 +7,12 @@ declare var bootstrap: any;
 @Component({
   selector: 'app-portfoliocarousel',
   standalone: true,
-  imports: [RouterLink, NgFor],
+  imports: [NgFor],
   templateUrl: './portfoliocarousel.component.html',
   styleUrls: ['./portfoliocarousel.component.css']
 })
-export class PortfoliocarouselComponent implements AfterViewInit {
-  @Input() activeSlideIndex: number = 0; // Define el @Input
+export class PortfoliocarouselComponent implements AfterViewInit, OnDestroy {
+  @Input() activeSlideIndex: number = 0;
 
   items = [
     {
@@ -35,25 +35,64 @@ export class PortfoliocarouselComponent implements AfterViewInit {
     }
   ];
 
-  get nextRoute(): string {
-    const nextIndex = (this.activeSlideIndex + 1) % this.items.length;
-    return this.items[nextIndex].route;
-  }
+  private carousel: any;
+  private carouselElement: HTMLElement | null = null;
 
-  get prevRoute(): string {
-    const prevIndex = (this.activeSlideIndex - 1 + this.items.length) % this.items.length;
-    return this.items[prevIndex].route;
-  }
+  constructor(private router: Router) {}
 
   ngAfterViewInit() {
     // Inicializar el carrusel
-    const myCarousel = document.querySelector('#carouselExampleFade');
-    const carousel = new bootstrap.Carousel(myCarousel, {
-      interval: 2000,
-      wrap: true
-    });
+    this.carouselElement = document.querySelector('#carouselExampleFade');
+    if (this.carouselElement) {
+      this.carousel = new bootstrap.Carousel(this.carouselElement, {
+        interval: 2000,
+        wrap: true
+      });
 
-    // Mover a la imagen especificada por activeSlideIndex
-    carousel.to(this.activeSlideIndex);
+      // Mover a la imagen especificada por activeSlideIndex
+      this.carousel.to(this.activeSlideIndex);
+
+      // Escuchar el evento de slide cuando cambia
+      this.carouselElement.addEventListener('slid.bs.carousel', this.onSlideChange.bind(this));
+    }
+  }
+
+  ngOnDestroy() {
+    if (this.carouselElement) {
+      this.carouselElement.removeEventListener('slid.bs.carousel', this.onSlideChange.bind(this));
+    }
+  }
+
+  nextSlide() {
+    if (this.carousel) {
+      this.carousel.next();
+    }
+  }
+
+  prevSlide() {
+    if (this.carousel) {
+      this.carousel.prev();
+    }
+  }
+
+  private onSlideChange() {
+    this.updateActiveSlideIndex();
+    this.navigateToCurrentRoute();
+  }
+
+  private updateActiveSlideIndex() {
+    // Actualizar el índice del slide activo
+    const activeItem = document.querySelector('.carousel-item.active');
+    if (activeItem && activeItem.parentElement) {
+      this.activeSlideIndex = Array.from(activeItem.parentElement.children).indexOf(activeItem);
+    }
+  }
+
+  private navigateToCurrentRoute() {
+    // Navegar a la ruta del slide activo
+    const currentItem = this.items[this.activeSlideIndex];
+    if (currentItem) {
+      this.router.navigate([currentItem.route]);
+    }
   }
 }

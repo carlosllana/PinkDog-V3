@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { GcommentsComponent } from "../gcomments/gcomments.component";
 import { HomeBrandConsultationComponent } from "../home-brand-consultation/home-brand-consultation.component";
 import { HomeAboutComponent } from "../home-about/home-about.component";
@@ -21,5 +21,8 @@ export class ContentComponent {
 
 
 
- }
+}
+
+
+
 

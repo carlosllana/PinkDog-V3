@@ -28,11 +28,13 @@ transition: background-color 500ms linear;
 
     background-color: #FF7BC9;
     border-radius: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     float: right;
-    right: -50%;
-    position: absolute;
+    margin-left: 150px;
+
+   position: absolute;
+
     text-align: center;
     height: 40px;
     line-height: 22px;
@@ -44,11 +46,6 @@ transition: background-color 500ms linear;
 #btnheader:hover{
 
     background-color: #4C0054;
-    border-radius: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
-    line-height: 22px;
     border: solid 1px #4C0054;
     -webkit-transition: background-color 500ms linear;
     -ms-transition: background-color 500ms linear;
@@ -115,6 +112,13 @@ transition: background-color 500ms linear;
     #logomovil{
       visibility:visible;
       display: block;
+    }
+    #navbarToggleExternalContentSmall {
+      position: absolute;
+        top: 100%;
+        width: 100%;
+        background-color: white;
+        z-index: 997;
     }
 
 

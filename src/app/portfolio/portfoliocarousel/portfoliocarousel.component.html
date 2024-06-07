@@ -2,19 +2,19 @@
   <div class="carousel-inner">
     <div class="carousel-item" *ngFor="let item of items; let i = index" [class.active]="i === activeSlideIndex">
       <picture>
-        <source srcset="{{item.srcSmall}}" media="(max-width: 767px)">
-        <source srcset="{{item.src}}" media="(min-width: 768px)">
+        <source [srcset]="item.srcSmall" media="(max-width: 767px)">
+        <source [srcset]="item.src" media="(min-width: 768px)">
         <img [src]="item.src" class="d-block w-100" [alt]="item.alt">
       </picture>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" [routerLink]="prevRoute">
+  <button class="carousel-control-prev" type="button" (click)="prevSlide()">
     <span class="carousel-control-prev-icon" aria-hidden="true">
       <img src="../../../assets/img/portfolio/sliderarrow.svg" style="margin-top: 10px;">
     </span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" [routerLink]="nextRoute">
+  <button class="carousel-control-next" type="button" (click)="nextSlide()">
     <span class="carousel-control-next-icon" aria-hidden="true">
       <img src="../../../assets/img/portfolio/sliderarrow.svg" style="margin-top: 10px;">
     </span>
