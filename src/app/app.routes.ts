@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes, ExtraOptions, Router, NavigationEnd } from '@angular/router';
+import { RouterModule, Routes, ExtraOptions, Router, Event, NavigationEnd } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
 import { filter } from 'rxjs/operators';
 
@@ -53,9 +53,13 @@ const routerOptions: ExtraOptions = {
 export class AppRoutingModule {
   constructor(private router: Router, private viewportScroller: ViewportScroller) {
     this.router.events.pipe(
-      filter(event => event instanceof NavigationEnd)
-    ).subscribe(() => {
-      this.viewportScroller.scrollToPosition([0, 0]);
+      filter((event: Event): event is NavigationEnd => event instanceof NavigationEnd)
+    ).subscribe((event: NavigationEnd) => {
+
+      setTimeout(() => {
+        this.viewportScroller.scrollToPosition([0, 0]);
+
+      }, 100);
     });
   }
 }

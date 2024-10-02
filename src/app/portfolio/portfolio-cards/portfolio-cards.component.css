@@ -39,10 +39,12 @@
 }
 
 .portfolioseemore:hover{
-    margin-left: 100px;
+    margin-left: 120px;
     margin-top: 0px;
- background-color: RGBA(76, 0, 84, 0.1);
+    padding-left: 10px;
+ background-color: #FF7BC9;
  box-shadow: 5px 5px 1px rgba(0,0,0,0.8);
+ transition: all 0.3s ease-in-out;
 
 
 }
@@ -76,7 +78,7 @@
 
 
     min-width: 100px;
-    width: 140px;
+    width: 150px;
     text-decoration: none;
     height: 30px;
     background-color: #8EFFD5;

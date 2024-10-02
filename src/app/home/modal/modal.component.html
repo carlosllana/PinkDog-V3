@@ -1,7 +1,3 @@
-
-
-
-
 <!-- Modal -->
 <div class="modal fade modal-l" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -10,55 +6,43 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-
-        <div class="container-fluid" style=" border-top: solid 1px #450351; border-bottom: solid 1px #450351; ">
+        <div class="container-fluid" style="border-top: solid 1px #450351; border-bottom: solid 1px #450351;">
           <div class="container-fluid justify-content-center">
-              <div class="row" style="margin-top: 0px; margin-bottom: 0px;">
-
-
-              <div class="col-1">
-
-
-
+            <div class="row" style="margin-top: 0px; margin-bottom: 0px;">
+              <div class="col-1"></div>
+              <div class="col-10" id="formulario" [formGroup]="form" style="background-color: white; padding-top: 40px; padding-bottom: 40px;">
+                <h2 style="margin-bottom: 10px; font-family: PPMonument;">Contact</h2>
+                <form [formGroup]="form" (ngSubmit)="send()">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Name</label>
+                    <input type="text" formControlName="from_name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail2" class="form-label">Phone Number</label>
+                    <input type="tel" formControlName="phone_number" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail3" class="form-label">Email address</label>
+                    <input type="email" formControlName="from_email" class="form-control" id="exampleInputEmail3" aria-describedby="emailHelp" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail4" class="form-label">Message</label>
+                    <input type="text" formControlName="message" class="form-control" id="exampleInputEmail4" height="248" aria-describedby="emailHelp" required>
+                  </div>
+                  <button type="submit"
+                          (mouseover)="changeButtonText('Contact me')"
+                          (mouseout)="changeButtonText('Contact me')"
+                          class="btn btn-primary w-auto btnrosado"
+                          style="min-width:200px; margin-right: 10px;">
+                    {{buttonText}}
+                  </button>
+                </form>
               </div>
-              <div class="col-10" id="formulario" style="background-color: white;padding-top: 40px; padding-bottom: 40px;">
-               <h2 style="margin-bottom: 10px; font-family: PPMonument;">Contact</h2>
-
-                  <form>
-                      <div class="mb-3" >
-                        <label for="exampleInputEmail1" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Phone Number</label>
-                          <input type="tel" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp">
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail3" aria-describedby="emailHelp">
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Message</label>
-                          <input type="text" class="form-control" id="exampleInputEmail3" height="248" aria-describedby="emailHelp">
-                        </div>
-
-
-
-                      <button type="submit" class="btn btn-primary w-auto btnrosado" style=" min-width:40%; margin-right: 10px;" >Yes, contact me now!</button>
-                    </form>
-
-              </div>
-
-              <div class="col-1">
-
-              </div>
-
+              <div class="col-1"></div>
+            </div>
           </div>
+        </div>
       </div>
-      </div>
-
-
-
     </div>
   </div>
 </div>

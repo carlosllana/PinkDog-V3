@@ -18,9 +18,50 @@ p{   color: #4C0054;
 
 
  }
+
+/* content.component.css */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-enter, .fade-leave-to /* .fade-leave-active en versiones anteriores de Vue */ {
+  opacity: 0;
+}
+
+#logos {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px;
+
+}
+
+#logos img {
+
+  top: 0;
+  left: 0;
+
+  height: auto;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  max-width: 100%;
+max-height: 80px;
+align-items: bottom;
+margin-top: 30px;
+
+margin-bottom: 30px;
+}
+
+#logos img.hidden {
+  opacity: 0;
+}
+
+
+
  .w1{font-size: 16px; line-height: 20px;}
  .w2{font-size: 64px; color: #450351;line-height: 56px; }
- .w3{font-size: 56px;    line-height: 56px;}
+ .w3{font-size: 56px;    line-height: 56px;font-family:  HelveticaNeve;
+  font-size: 40px;
+   font-weight:lighter;}
  .w4{font-size: 64px; color: #450351;line-height: 56px; }
  .w5{font-size: 64px; color: #450351;line-height: 56px;
   font-family: helveticaNeve;
@@ -32,15 +73,9 @@ p{   color: #4C0054;
      font-weight:lighter;
      margin-bottom: 8px;
      line-height:32px;
+     color: #450351;
     }
- .logos img{
 
-max-width: 100%;
-max-height: 80px;
-align-items: bottom;
-
-
- }
  .textoportfolio{
    font-family: RiskGroteskBold; font-weight: 100;
   color: #450351;
@@ -69,14 +104,7 @@ margin-bottom: 0.2em;
   margin-bottom: 0px;  padding-top:8vw; padding-left: 2vw; padding-bottom: 4vw; padding-right: 8vw;
 }
 
-#logosarriba{
 
-  margin-top: 60px;
-}
-#logosabajo{
-
-  margin-bottom: 60px;
-}
 #logoscelular{
   display: none!important;
 }
@@ -167,18 +195,10 @@ margin-bottom: 0.2em;
 
 
 @media only screen and (max-width: 768px) {
+  .titulo2{font-size: 8vw!important;}
 
-  #logoscelular{
-    display: flex!important;
-  }
-  #logosabajo{
-    display: none!important;
-  }
 
-  #logosarriba{
 
-    display: none!important;
-  }
 
 
   .w1{font-size: 24px; line-height: 30px;}
@@ -195,7 +215,7 @@ margin-bottom: 0.2em;
 
 }
 @media only screen and (max-width: 687px) {
-
+  .titulo2{font-size: 8vw!important;}
 
   .w1{font-size: 20px; line-height: 22px;}
   .w2{font-size: 60px; line-height: 56px; }
@@ -207,7 +227,7 @@ margin-bottom: 0.2em;
 
 @media only screen and (max-width: 576px) {
 
-
+.titulo2{font-size: 8vw!important;}
   .w1{font-size: 20px; line-height: 18px;}
   .w2{font-size: 60px; line-height: 32px; }
   .w3{font-size: 38px;  line-height: 32px;}
@@ -246,7 +266,7 @@ margin-bottom: 0.2em;
   .w3{font-size: 29px;  line-height: 20px;}
   .w4{font-size: 35px; line-height: 20px; }
   .w5{font-size: 36px; line-height: 20px;}
-   .w6{font-size: 28px; line-height:22px; }
+   .w6{font-size: 28px; line-height:28px; }
    .highlight{line-height: 42px;}
   .maintext{
 

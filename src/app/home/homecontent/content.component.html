@@ -5,16 +5,16 @@
         <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 order-md-1 text-start offset-xl-1 offset-lg-1 offset-md-1 maintext">
             <div class="lc-block mb-3">
                 <div>
-                    <div class="w6">Helping retailers</div>
+                    <div class="w6"></div>
                     <h2 class="w5">Build brands that</h2>
                     <h2>
                     <div class="w4" style=" font-family:PPMonument; font-weight: 900;"><span class="highlight" >stand out</span></div>
-                    <div><span  class="w3" style=" font-family: HelveticaNeue; font-weight: 300; ">and__</span><span class="w4"  style="font-family: RiskGroteskItal; font-style: italic; font-weight: 500; ">connect</span><span class="w3" style="font-family: Helvetica Neue; font-weight: 300;">__with<br/></span>
-                        <span class="w4" style=" font-family: PPMonumentEXT; font-weight: 200;">Consumers</span></div>
+                    <div><span  class="w3" style="font-family: Helvetica Neue; font-weight: 300; ">and__</span><span class="w4"  style="font-family: RiskGroteskItal; font-style: italic; font-weight: 500; ">connect</span><span class="w3" style="font-family: Helvetica Neue; font-weight: 300;">__with<br/></span>
+                        <span class="w4" style=" font-family: PPMonumentEXT; font-weight: 200;">consumers</span></div>
                     </h2>
                     <p class="w1">
 
-                        Everything from graphic design, brand identity and video production to brand architecture and web design. All done in our inimitable Pink Dog way.
+                        Everything from graphic design, brand identity and video production to brand <br>architecture and web design. All done in our inimitable Pink Dog way.
                      </p>
 
 
@@ -31,9 +31,10 @@
 
         <div class="col-md-6 order-md-2" >
           <div class="video-bg card">
-              <video class="min-vh-50" autoplay="" preload="" muted="" loop="" playsinline="" style="object-fit: cover; object-position: 50% 50%; z-index: 990;">
-                  <source src="../../assets/video2.mp4" type="video/mp4">
-              </video>
+            <video id="video" #video muted autoplay playsInline loop class="min-vh-50" style="object-fit: cover; object-position: 50% 50%; z-index: 990;">
+              <source src="../../assets/video2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
       </div>
 
@@ -49,73 +50,31 @@
 <div  class="divider justify-content-center" style="border-top: solid 1px #450351;"></div>
 
 
-<app-home-brand-consultation></app-home-brand-consultation>
 
-<div class="divider" style="border-bottom: solid 1px #450351;"></div>
+<div  style="border-bottom: solid 1px #450351;"></div>
 
 <div class="container justify-content-center">
 
-<!--logos arriba-->
-<div id="logosarriba" class="row align-middle d-flex justify-content-center mx-auto py-3" style="text-align: center;">
-
-<div class="offset-lg-1 offset-sm-0 col-lg-2 col-md-2 col-sm-12 logos ">
-  <img src="../../assets/img/logo_BLT.png">
-
-</div>
-<div class="col-xl-2 col-md-2 col-sm-12 logos">
-  <img src="../../assets/img/logo_Anatel.png">
-
-</div>
-<div class="col-xl-2 col-md-2  col-sm-12 logos">
-  <img src="../../assets/img/logo_STM.png">
-
-</div>
-<div class="col-lg-2 col-md-2 col-sm-12 logos">
-  <img src="../../assets/img/logo_ACS.png">
-
-</div>
-<div class="col-lg-2 col-md-2 col-sm-12 logos">
-  <img src="../../assets/img/logo_GO.png">
-
-</div>
-<div class="col-lg-1 col-md-0 logos">
-
+<div class="container d-flex align-items-center justify-content-center text-center" style="margin-top: 40px;">
+ <div class="row"><div class="col-12"></div><h2 class="titulo2">Clients</h2>
+ <div class="col-12"><p>Our partners</p></div>
+</div></div>
+<!-- content.component.html -->
+<!--logos-->
+<div id="logos" class="row align-middle d-flex justify-content-center mx-auto py-3 offset-lg-1" style="text-align: center;">
+  <div *ngFor="let logo of currentLogos; let i = index" class=" col-xl-3 col-md-2 col-sm-12 logos">
+    <img [src]="logo" [class.hidden]="!isVisible(i)">
+  </div>
 </div>
 
 
-</div>
-<!--logos arriba-->
-
-<!--logos abajo-->
-<div id="logosabajo" class="row align-middle d-flex justify-content-center mx-auto py-3" style="text-align: center;">
-
-  <div class="offset-lg-1 offset-sm-0 col-lg-2 col-md-2 col-sm-12 logos ">
-    <img src="../../../assets/img/logo_Caleu.png">
-
-  </div>
-  <div class="col-xl-2 col-md-2 col-sm-12 logos">
-    <img src="../../../assets/img/logo_BWS.png">
-
-  </div>
-  <div class="col-xl-2 col-md-2  col-sm-12 logos">
-    <img src="../../../assets/img/logo_Anatel.png">
-
-  </div>
-  <div class="col-lg-2 col-md-2 col-sm-12 logos">
-    <img src="../../../assets/img/logo_fluorescencia.svg">
-
-  </div>
-  <div class="col-lg-2 col-md-2 col-sm-12 logos">
-    <img src="../../../assets/img/logo_naan.svg">
-
-  </div>
-  <div class="col-lg-1 col-md-0 logos">
-
-  </div>
 
 
-  </div>
-  <!--logos abajo-->
+
+
+
+
+
 
 <!--logos celular-->
 <div id="logoscelular" class="row align-middle d-flex justify-content-center mx-auto py-3" style="text-align: center;">
@@ -142,6 +101,9 @@
 
   </div>
   <!--logos celular-->
+</div>
+
+  <div class="divider" style="border-top: solid 1px #450351; border-bottom: solid 1px #450351;"></div>
 
 <app-gcomments></app-gcomments>
 <div  class="divider"></div>

@@ -7,6 +7,22 @@
     border-radius: 0px;
 
 }
+.form-label{color: #4C0054;}
+.freebrand{
+
+  color: #4C0054;
+  font-size: 36px;
+  line-height: 48px;
+  border-bottom: none!important;
+
+}
+#freebrandtxt{
+
+  border-bottom: solid 1px #4C0054;
+  padding-bottom: 60px;
+  width: 100%; margin-top: 80px;
+  }
+
 #formulario{
 
     background-color: white; padding-top: 100px; padding-bottom: 100px;
@@ -61,13 +77,15 @@
 
           font-size: 32px;
           line-height: 30px;
+          border-bottom: none;
         } }
       @media (max-width: 1200px) {
 
 
         .freebrand{
 
-          font-size: 22px;
+          font-size: 28px;
+          border-bottom: none;
         }
 
 
@@ -82,6 +100,7 @@
 .freebrand{
 
   font-size: 34px;
+  border-bottom: none;
 }
 #logoform{
   display: none;
@@ -91,6 +110,7 @@
 
   border-bottom: solid 1px #4C0054;
   padding-bottom: 60px;
+  width: 100%; margin-top: 80px;
   }
 
 
@@ -100,22 +120,59 @@
       }
 
       @media (max-width: 576px) {
+   #formulario {
 
+    border-top: solid 1px #4C0054;
+    padding-top: 50px;
+    padding-bottom: 60px;
+
+   }
 
         .freebrand{
 
-          font-size: 38px;
+          font-size: 32px;
           line-height: 38px;
+
         }
         #freebrandtxt{
 
         border-bottom: solid 1px #4C0054;
+
         }
         #logoform{
           display: none;
         }
 
 
+        @media (max-width: 406px) {
+          #formulario {
+
+           border-top: solid 1px #4C0054;
+           padding-top: 50px;
+           padding-bottom: 60px;
+
+          }
+
+               .freebrand{
+
+                 font-size: 29px;
+                 line-height: 36px;
+
+               }
+               #freebrandtxt{
+
+               border-bottom: solid 1px #4C0054;
+
+               }
+               #logoform{
+                 display: none;
+               }
+
+
+
+
+
+                     }
 
 
 

@@ -70,6 +70,8 @@
     margin-bottom: 2px;
     border-radius: 1.5rem;
     height: 2.75rem;
+    font-size: 1.2rem;
+
     -webkit-transition: background-color 500ms linear;
       -ms-transition: background-color 500ms linear;
       transition: background-color 500ms linear;
@@ -95,6 +97,7 @@
     height: 2.75rem;
     margin-top: 2px;
     margin-bottom: 2px;
+    font-size: 1.2rem;
     -webkit-transition: background-color 500ms linear;
       -ms-transition: background-color 500ms linear;
       transition: background-color 500ms linear;
@@ -106,6 +109,8 @@
     border-radius: 1.5rem;
     margin-top: 2px;
     margin-bottom: 2px;
+    font-size: 1.2rem;
+
     -webkit-transition: background-color 500ms linear;
       -ms-transition: background-color 500ms linear;
       transition: background-color 500ms linear;
@@ -264,6 +269,15 @@
 
       line-height: 40px;
       margin-bottom: 40px;
+    }  .maincol2{
+
+
+      font-size: 8vw;
+      text-align: center;
+
+
+      line-height: 40px;
+      margin-bottom: 40px;
     }
     .maincoltext{
       text-align: center;
@@ -273,7 +287,13 @@
 
   @media only screen and (max-width: 576px) {
     .maincol{
-      margin-bottom:0px;
+      margin-bottom:40px;
+    }
+    .borderr{
+      border-right: none!important;
+    }
+    .borderl{
+      border-left: none!important;
     }
 
     .maincolp{
@@ -294,6 +314,8 @@
 
 
         margin-bottom: 40px;
+        margin-top: 0px;
+        padding-top: 0px;
 
         }
 
@@ -301,6 +323,106 @@
 
         display: none;
        }
+       .maincoltext{
+        margin-bottom: 0px;
+       }
+       #imagenyuri1{
+        height: 400px!important;
+
+       }
+       #imagenyuri2{
+        height: 400px!important;
+
+       }
+       .btn1{
+        width: 100%;
+        margin-right: 2px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        border-radius: 1.5rem;
+        font-size: 1.2rem;
+        height: 2.6rem;
+
+
+      }
+      .btn2{
+        width: 100%;
+        margin-right: 2px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        border-radius: 1.5rem;
+        font-size: 1.2rem;
+        height: 2.6rem;
+
+
+      }
+      .btn3{
+        width: 100%;
+        margin-right: 2px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        border-radius: 1.5rem;
+        font-size: 0.9rem;
+        height: 2.6rem;
+
+
+      }
+      .btn4{
+        width: 100%;
+        margin-right: 2px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        border-radius: 1.5rem;
+        font-size: 1.2rem;
+        height: 2.6rem;
+
+
+      }
+      .btn5{
+        width: 100%;
+        margin-right: 2px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        border-radius: 1.5rem;
+        font-size: 1.2rem;
+        height: 2.6rem;
+
+
+      }
+      .btn6{
+        width: 100%;
+        margin-right: 2px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        border-radius: 1.5rem;
+        font-size: 1.2rem;
+        height: 2.6rem;
+
+
+      }
+      .btn7{
+        width: 100%;
+        margin-right: 2px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        border-radius: 1.5rem;
+        font-size: 1.2rem;
+        height: 2.6rem;
+
+
+      }
+      .btn8{
+        width: 100%;
+        margin-right: 2px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        border-radius: 1.5rem;
+        font-size: 1.4rem;
+        height: 2.6rem;
+
+
+
+      }
 
 
   }

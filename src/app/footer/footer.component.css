@@ -27,9 +27,6 @@ p{   color: #4C0054;
 .footerlinks{
 
    margin-top: 42px;
-
-
-
    line-height: 40px;
 }
 #footercenter{
@@ -39,7 +36,19 @@ p{   color: #4C0054;
 
    margin-left: 0px;
    margin-right: 0px;
+   font-size: 25px;
+   color: white;
+   -webkit-transition: color 500ms linear;
+   -ms-transition: color 500ms linear;
+   transition: color 500ms linear;
 
+}
+.footericons:hover{
+
+color: #FF7BC9;
+-webkit-transition: color 500ms linear;
+-ms-transition: color 500ms linear;
+transition: color 500ms linear;
 
 }
 .footericons1{
@@ -120,7 +129,10 @@ margin-left: -18px;
 
 
 @media only screen and (max-width: 576px) {
+.footerlinks1{
 
+  margin-left: 34px;
+}
 
 .text-white {
 font-size: 9px;
@@ -135,4 +147,6 @@ padding-right: 10px;
 .btnverde{
 
 }
+#logofooter{
+margin-bottom: 20px;}
 }

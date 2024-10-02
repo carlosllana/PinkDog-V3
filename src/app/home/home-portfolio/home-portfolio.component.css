@@ -33,6 +33,20 @@ padding-left: 0px;}
     color: #450351;
 
   }
+  .casehome{
+    background-color: #fff;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+
+  }
+  .casehome:hover{
+    background-color: #8EFFD5;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+
+  }
   .btnportfolio{
     width: auto;
     height: 40px;

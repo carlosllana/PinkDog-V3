@@ -27,10 +27,15 @@ ngb-carousel {
 }
 .carousel-control-prev {
    z-index: 20;
+   margin-top: 100px;
+   margin-bottom: 100px;
 }
 
 .carousel-control-next {
    z-index: 20;
+   margin-top: 100px;
+   margin-bottom: 100px;
+
 }
 .carousel-indicators{
   z-index: 20;
@@ -52,10 +57,10 @@ ngb-carousel {
 .carousel-control-next-icon:hover{
 
 
-  margin-right: -4%;
+  margin-right: 4%;
   scale: 1.1;
   opacity: 1;
-  box-shadow: 5px -5px 1px rgba(0,0,0,0.8);
+  box-shadow: -5px -5px 1px rgba(0,0,0,0.8);
   transition: all 0.3s ease-in-out;
 }
 .carousel-control-prev-icon{

@@ -1,45 +1,45 @@
-<div class="container-fluid" style=" border-top: solid 1px #450351; border-bottom: solid 1px #450351;">
-    <div class="container">
-        <div class="row">
-
-
-        <div class="col-lg-6 col-md-12 justify-content-center align-items-center mx-auto p-0">
-            <div id="freebrandtxt" class="freebrand" style="width: 100%; margin-top: 80px;">
-               <span class="freebrand" style="font-family: PPMonumentEXT; font-weight: 200; ">Book a </span><span class="freebrand" style=" font-family: Helvetica Neue; font-weight: 300;"> </span><span class="freebrand" style=" font-family: PPMonument; font-weight: 800;  ">FREE <br>BRAND ADVISORY</span>
-            </div>
-         <div class="row justify-content-center align-items-center mx-auto">
-        <img id="logoform"  class="justify-content-center align-items-center"  src="../../assets/img/imagen2.svg" style="max-height:50%; max-width: 50%; margin-top: 10%;">
-         </div>
-
+<div class="container-fluid" style="border-top: solid 1px #450351; border-bottom: solid 1px #450351;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 justify-content-center align-items-center mx-auto p-0">
+        <div id="freebrandtxt" class="freebrand">
+          <span class="freebrand" style="font-family: PPMonumentEXT; font-weight: 200;">Book a </span>
+          <span class="freebrand" style="font-family: Helvetica Neue; font-weight: 300;"></span>
+          <span class="freebrand" style="font-family: PPMonument; font-weight: 800;">FREE <br>BRAND CONSULTATION!</span>
         </div>
-        <div class="col-lg-4 col-md-12" id="formulario" style="background-color:rgba(196,161,224,0.2); border-left: solid 1px #450351; border-right: solid 1px #450351;">
-         <h2 style="margin-bottom: 100px; font-family: PPMonument;">Contact</h2>
-
-            <form>
-                <div class="mb-3" >
-                  <label for="exampleInputEmail1" class="form-label">Name</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail2" class="form-label">Phone Number</label>
-                    <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail3" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail3" aria-describedby="emailHelp">
-                  </div>
-
-
-
-                <button type="submit" class="btn btn-primary w-auto btnrosado" style=" min-width:40%; margin-right: 10px;" >I want to be contacted</button>
-              </form>
-
+        <div class="row justify-content-center align-items-center mx-auto">
+          <img id="logoform" class="justify-content-center align-items-center" src="../../assets/img/imagen2.svg" style="max-height:50%; max-width: 50%; margin-top: 10%; margin-left: -50px;">
         </div>
-
-        <div class="col-lg-1 col-md-0">
-
-        </div>
-
+      </div>
+      <div class="col-lg-4 col-md-12" id="formulario" style="background-color:rgba(196,161,224,0.2); border-left: solid 1px #450351; border-right: solid 1px #450351;">
+        <h2 style="margin-bottom: 50px; font-family: PPMonument;">Contact</h2>
+        <form [formGroup]="form" (ngSubmit)="send()">
+          <div class="mb-3">
+            <label for="exampleInputName1" class="form-label">Name</label>
+            <input type="text" formControlName="from_name" class="form-control" id="exampleInputName1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPhone1" class="form-label">Phone Number</label>
+            <input type="tel" formControlName="phone_number" class="form-control" id="exampleInputPhone1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" formControlName="from_email" class="form-control" id="exampleInputEmail1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputMessage1" class="form-label">Message</label>
+            <input type="text" formControlName="message" class="form-control" id="exampleInputMessage1">
+          </div>
+          <button type="submit"
+                  (mouseover)="changeButtonText('Contact me')"
+                  (mouseout)="changeButtonText('Contact me')"
+                  class="btn btn-primary w-auto btnmorado"
+                  style="min-width:200px; margin-right: 10px;">
+            {{buttonText}}
+          </button>
+        </form>
+      </div>
+      <div class="col-lg-1 col-md-0"></div>
     </div>
-</div>
+  </div>
 </div>

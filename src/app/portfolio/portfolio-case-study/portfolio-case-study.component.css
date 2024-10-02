@@ -4,6 +4,10 @@ color: #4C0054;
 
 
 }
+.challengue {
+  border-left: solid 1px #4C0054; border-right: solid 1px #4C0054;
+
+}
 #bltimgl2{
   background-image: url('../../../assets/img/portfolio/photol2.png'); background-size: cover; height:550px; float: right; text-align: right; padding: 0px;
 
@@ -34,9 +38,14 @@ color: #4C0054;
 #columna2{
   height: 550px; text-align: right; padding: 0px;
 }
-
+#columna3{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 @media only screen and (max-width: 576px) {
-
+  .challengue {
+    border-left: none; border-right: none;
+  }
 
   .noborder{
     border-left: none!important;
@@ -54,6 +63,7 @@ color: #4C0054;
 #columna3{
   margin-left: 0px;
   margin-right: 0px;
+  padding-left: 40px; padding-right: 40px;
 }
 
 #bltimgl2{

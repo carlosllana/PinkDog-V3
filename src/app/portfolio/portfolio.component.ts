@@ -6,18 +6,19 @@ import { PortfolioCardsComponent } from "./portfolio-cards/portfolio-cards.compo
 import { ModalportfolioComponent } from './modalportfolio/modalportfolio.component';
 
 @Component({
-    selector: 'app-portfolio',
-    standalone: true,
-    templateUrl: './portfolio.component.html',
-    styleUrls: ['./portfolio.component.css'],
-    imports: [PortfoliocarouselComponent, PortfolioCardsComponent, HomeBrandConsultationComponent, PortfolioCardsComponent, ModalportfolioComponent]
+  selector: 'app-portfolio',
+  standalone: true,
+  templateUrl: './portfolio.component.html',
+  styleUrls: ['./portfolio.component.css'],
+  imports: [PortfoliocarouselComponent, PortfolioCardsComponent, HomeBrandConsultationComponent, ModalportfolioComponent]
 })
 export default class PortfolioComponent implements OnInit {
 
-    constructor(private viewportScroller: ViewportScroller) { }
+  constructor(private viewportScroller: ViewportScroller) { }
 
-    ngOnInit(): void {
-        this.viewportScroller.scrollToPosition([0, 0]);
-    }
+  ngOnInit(): void {
+    console.log('PortfolioComponent initialized');
+    this.viewportScroller.scrollToPosition([0, 0]);
+    console.log('Scrolled to top in PortfolioComponent');
+  }
 }
-

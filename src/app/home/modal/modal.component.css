@@ -2,7 +2,9 @@
 
   margin-bottom: 20px;
 }
-
+.form-label{
+  color: #4C0054;
+}
 .modal-header{
   border-bottom: none!important;
 

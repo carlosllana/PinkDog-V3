@@ -63,15 +63,37 @@ p {
   height: 100px;
 }
 
- .btnheader{min-width:40%;}
+ .btnheader{min-width:40%; color: #450351;}
+.btnmorado {
+  background-color: #450351; border-radius: 1.4em;
+    -webkit-transition: background-color 500ms linear;
+-ms-transition: background-color 500ms linear;
+transition: background-color 500ms linear;
+
+}
+.btnmorado:hover {
+  background-color: #FF7BC9; border-radius: 1.4em;
+  border: solid 1px #450351;
+    -webkit-transition: background-color 500ms linear;
+-ms-transition: background-color 500ms linear;
+transition: background-color 500ms linear;
+
+}
 .btnrosado {
 
     background-color: #FF7BC9; border-radius: 1.4em;
+    -webkit-transition: background-color 500ms linear;
+-ms-transition: background-color 500ms linear;
+transition: background-color 500ms linear;
 }
 .btnrosado:hover {
 
     background-color: #450351;
-    color: white; }
+    border: solid 1px #450351!important;
+    color: white;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;}
     .btnverde {
 
 
@@ -92,11 +114,11 @@ p {
 .logosmall{
     display: none;
 }
-.freebrand{
-    color: #4C0054;
-    font-size: 40px;
-    line-height: 48px;
-  }
+.border-dark {
+
+  border-color: #450351!important;
+}
+
 
 
 .nav-link:hover{
@@ -178,7 +200,7 @@ margin-right: 0px;
 
 
 
-  @media (max-width: 767.98px) {
+  @media (max-width: 768px) {
 
 
 .btnheader{min-width:100%;}
@@ -253,3 +275,8 @@ text-align:-webkit-right;
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+@media (max-width: 576px) {
+
+}

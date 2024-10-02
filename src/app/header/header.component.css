@@ -4,23 +4,30 @@
   display: none;
 }
 
+
+.nav-item a {color: #4C0054;
+  }
 .nav-item a:active {color: #FF7BC9;
 text-decoration: none;}
 .nav-item a:focus {color: #FF7BC9;}
 
-.nav-item:hover {
+.nav-item a:hover {
 
 text-decoration: none;
-color: #E8FF48;
+color: #FF7BC9!important;
 padding-bottom: 0px;
 -webkit-transition: background-color 500ms linear;
 -ms-transition: background-color 500ms linear;
 transition: background-color 500ms linear;
+-webkit-transition:color 500ms linear;
+-ms-transition: color 500ms linear;
+transition: color 500ms linear;
 
 }
 .nav-link:hover {
 
   text-decoration: none;
+  cursor: pointer;
 
 
 }
@@ -44,7 +51,7 @@ transition: background-color 500ms linear;
     transition: background-color 500ms linear;
 }
 #btnheader:hover{
-
+   color: #fff!important;
     background-color: #4C0054;
     border: solid 1px #4C0054;
     -webkit-transition: background-color 500ms linear;
@@ -52,12 +59,26 @@ transition: background-color 500ms linear;
     transition: background-color 500ms linear;
 }
 
-.navbar-brand{
-    text-align: center;
-    margin-right: 0px;
-    margin-left: 0px;
-  width: 300px;
-  }
+  #btnheader:active{
+    color: #4C0054;
+
+    }
+    #btnheader:focus{
+      color: #4C0054;
+
+      }
+      .navbar-brand {
+        text-align: center;
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 300px;
+        transition: transform 2s ease-in-out;
+      }
+
+      .navbar-brand:hover {
+        transform: rotate(4deg) scale(1.05);
+      }
+
 
 
   @media only screen and (max-width: 1400px) {
@@ -119,6 +140,8 @@ transition: background-color 500ms linear;
         width: 100%;
         background-color: white;
         z-index: 997;
+        box-shadow: none;
+        border: none;
     }
 
 

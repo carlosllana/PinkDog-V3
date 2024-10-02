@@ -7,6 +7,10 @@ h2{
   margin-left: 11%;
   position: relative;
 }
+#phototeam{
+  background-image: url('../../assets/img/team-pink-dog-studio-design-film.jpg'); background-position: left; margin-left: 0px; padding-left: 0px; background-size: cover; height: 800px; border-left: solid 1px #4C0054;
+
+}
 .membertxt{height: 700px;}
 #teamhero{
 
@@ -44,13 +48,19 @@ margin-top: 20px;
 
  .btnteam:hover{
     border-radius: 20px;
-    background-color: red;
+
     border: solid 1px #4C0054;
     text-decoration: none;
-    background-color: RGBA(266, 266, 266, 0.8);
+
     box-shadow: 5px 5px 1px rgba(0,0,0,0.8);
     margin-left: -6px;
     margin-bottom: 6px;
+
+    padding-left: 10px;
+ background-color: #FF7BC9;
+
+ transition: all 0.3s ease-in-out;
+ cursor:pointer;
 
     }
     .btnteam a {
@@ -65,14 +75,29 @@ margin-top: 20px;
 
 border: none;
 border-radius: 40px;
-width: 30px;
-height: 30px;
+width: 40px;
+height: 40px;
 float: right;
+color: #4C0054;
 background-color:transparent!important;
-font-size: 20px;
-margin-top: -10%;
+font-size: 30px;
+position: relative;
+top: 0px;
+margin-top: -15%;
+margin-right: 10px;
+-webkit-transition: color 500ms linear;
+-ms-transition: color 500ms linear;
+transition: color 500ms linear;
 
 }
+.closebtn:hover{
+
+color: #FF7BC9;
+-webkit-transition: color 500ms linear;
+-ms-transition: color 500ms linear;
+transition: color 500ms linear;
+
+  }
 .elemento {
   opacity: 0;
   transition: opacity 0.5s ease; /* Agrega una transición de 0.5 segundos para la propiedad de opacidad */
@@ -114,6 +139,13 @@ h2{
   h2{
     font-size: 24px;
     line-height: 50px;
+
+  }
+  #phototeam{
+    background-image: url('../../assets/img/team-pink-dog-studio-design-film-4.jpg')!important;
+    background-position: center; background-size: cover;
+    height: 800px;
+    border-left: solid 1px #4C0054;
 
   }
 }

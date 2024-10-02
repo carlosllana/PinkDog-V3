@@ -3,6 +3,7 @@
     <div class="carousel-item" *ngFor="let item of items; let i = index" [class.active]="i === activeSlideIndex">
       <picture>
         <source [srcset]="item.srcSmall" media="(max-width: 767px)">
+        <source [srcset]="item.srcLarge" media="(min-width: 1920px)">
         <source [srcset]="item.src" media="(min-width: 768px)">
         <img [src]="item.src" class="d-block w-100" [alt]="item.alt">
       </picture>

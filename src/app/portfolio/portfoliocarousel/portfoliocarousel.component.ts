@@ -16,24 +16,28 @@ export class PortfoliocarouselComponent implements AfterViewInit, OnDestroy {
 
   items = [
     {
-      src: '../../../assets/img/carousel_casestudies1.png',
+      src: '../../../assets/img/carousel_casestudies1.jpg',
       srcSmall: '../../../assets/img/carousel_casestudies1_small.png',
+      srcLarge: '../../../assets/img/Group503.jpg',
       alt: 'First slide',
       route: '/casestudies'
     },
     {
-      src: '../../../assets/img/carousel_casestudies2.png',
+      src: '../../../assets/img/carousel_casestudies2.jpg',
       srcSmall: '../../../assets/img/carousel_casestudies2_small.png',
+      srcLarge: '../../../assets/img/Group505.jpg',
       alt: 'Second slide',
       route: '/casestudies2'
     },
     {
-      src: '../../../assets/img/carousel_casestudies3.png',
+      src: '../../../assets/img/carousel_casestudies3.jpg',
       srcSmall: '../../../assets/img/carousel_casestudies3_small.png',
+      srcLarge: '../../../assets/img/Group506.jpg',
       alt: 'Third slide',
       route: '/casestudies3'
     }
   ];
+
 
   private carousel: any;
   private carouselElement: HTMLElement | null = null;

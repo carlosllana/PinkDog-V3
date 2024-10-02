@@ -33,6 +33,7 @@
    .comment a{
     color:#450351;
     text-decoration: none;
+
    }
 .comment:hover .brosa{
 
@@ -98,11 +99,11 @@ margin-top: 40px;
     }
 
 .commentparrafo{
-  font-size: 10px;
+  font-size: 14px;
 }
 .commenttitulo {
 
-  font-size: 10px;
+  font-size: 11px;
 }
 .bi-star-fill {
 
